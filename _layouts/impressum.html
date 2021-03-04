@@ -1,0 +1,106 @@
+{% assign impressum = site.data.impressum %}
+<!DOCTYPE html>
+<html lang="{{ page.locale | default: site.locale | slice: 0,2  | default: 'de' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+    {% feed_meta %}
+    {% include gtm.html %}
+    {% include custom-head.html %}
+  </head>
+  <body>
+    <main role="Content">
+      <article>
+        <header>
+          <h1>
+            {{ impressum.titel }}
+            <span>{{ impressum.vom }}</span>
+          </h1>
+        </header>
+        <section>
+          <h2>{{ impressum.betreiber.label }}</h2>
+          <p>
+              {{ page.betreiber.name | escape }}<br>
+              {{ page.betreiber.adresse | escape }}<br>
+              {{ page.betreiber.ort | escape }}<br>
+              {{ page.betreiber.land | escape }}<br>
+          </p>
+          <h3>{{ impressum.kontakt.label }}</h3>
+          <p>
+             {{ page.betreiber.telefon | escape }}<br>
+             {{ page.betreiber.email | escape }}
+          </p>
+          
+          {% if impressum.streitschlichtung %}
+            <h3>{{ impressum.streitschlichtung.label }}</h3>
+            {% for p in impressum.streitschlichtung.p %}
+              <p>{{ p | markdownify }}</p>
+            {% endfor %}
+          {% endif %}
+          
+          {% if impressum.haftung or impressum.links or impressum.urheberrecht %}
+          <h2>{{ impressum.disclaimer }}</h2>
+          {% endif %}
+          
+          {% if impressum.haftung %}
+            <h3>{{ impressum.haftung.label }}</h3>
+            {% for p in impressum.haftung.p %}
+              <p>{{ p | markdownify }}</p>
+            {% endfor %}
+          {% endif %}
+          
+          {% if impressum.links %}
+            <h3>{{ impressum.links.label }}</h3>
+            {% for p in impressum.links.p %}
+              <p>{{ p | markdownify }}</p>
+            {% endfor %}
+          {% endif %}
+          
+          {% if impressum.urheberrecht %}
+            <h3>{{ impressum.urheberrecht.label }}</h3>
+            {% for p in impressum.urheberrecht.p %}
+              <p>{{ p | markdownify }}</p>
+            {% endfor %}
+          {% endif %}
+                    
+          {{ content }}
+        </section>
+        
+        {% if impressum.bildnachweis %}
+          <section> 
+            <h3>{{ impressum.bildnachweis.label }}</h3>
+            {% for p in impressum.bildnachweis.p %}
+              <p>{{ p | markdownify }}</p>
+            {% endfor %}
+            {% assign sorted_by_url = site.pages | sort: 'url' %}
+            {% for doc in sorted_by_url %}
+              {% assign images = site.data.figures | where: "page", doc.url %}
+              {% if doc.image or images.size > 0 %}
+                <h4>
+                  {{ doc.title }}{% if doc.kicker %} - {{ doc.kicker }}{% endif %} 
+                  <a href="{{ doc.url | remove: 'index.html' }}">
+                    {% include icons/link.html %}
+                  </a>
+                </h4>
+                {% if doc.image %}
+                  {% include credit.html data=doc.image %}
+                {% elsif images.size > 0 %}
+                  {% for image in images %}
+                    {% include credit.html data=image %}
+                  {% endfor %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </section>
+        {% endif %}
+        
+      </article>
+    </main>
+    
+    {% include cookieconsent.html %}
+    {% include custom-pre-closing-body.html %}
+  </body>
+</html>

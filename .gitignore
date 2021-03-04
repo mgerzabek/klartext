@@ -1,4 +1,24 @@
+# Eclipse Project Metadatei
+.project
+
+# Dateien die von Jekyll generiert werden
 _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+# Dateien die vom Bundler generiert werden
+.bundle/
+Gemfile.lock
+
+# Gems
+*.gem
+
+# Dateien die von OSX generiert werden
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

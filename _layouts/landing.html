@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.locale | default: site.locale | slice: 0,2  | default: 'de' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+    {% feed_meta %}
+    {% include gtm.html %}
+    {% include custom-head.html %}
+  </head>
+  <body x-data="{ sidebarOpen: false }" 
+        x-on:keydown.window.escape="sidebarOpen = false">
+
+    {{ content }}
+      
+    {% include sidebar.html %}
+    {% include cookieconsent.html %}
+    {% include custom-pre-closing-body.html %}
+  </body>
+</html>

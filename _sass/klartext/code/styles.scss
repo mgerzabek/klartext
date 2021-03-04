@@ -1,0 +1,353 @@
+a:visited code {
+  border-color: var(--code-border-color);
+}
+
+/*
+ * Content structure for highlighted code blocks using fences or Liquid
+ * 
+ * (1) fences, no kramdown line_numbers
+ *
+ *   div.highlighter-rouge > div.highlight > pre.highlight > code
+ *
+ * (2) fences, kramdown line_numbers
+ *
+ *   div.highlighter-rouge > div.highlight > pre.highlight > code > table.rouge-table
+ *
+ * (3) Liquid highlight tag
+ *
+ *   figure.highlight > pre > code
+ *
+ * (4) Liquid highlight tag linenos
+ *
+ *   figure.highlight > pre > code > table.rouge-table  
+ */
+ 
+div.highlighter-rouge,
+figure.highlight {
+  border-top: 1px solid var(--code-border-color);
+  border-bottom: 1px solid var(--code-border-color);
+}
+figure.highlight {
+	max-width: initial;
+}
+
+@media (min-width: 1024px) {
+  div.highlighter-rouge.nolinenos > div.highlight {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+} 
+
+@media (min-width: 1024px) {
+	div.highlighter-rouge.linenos > div.highlight {
+    max-width: 40rem;
+    margin: 0 auto;
+	}
+}
+
+div.highlighter-rouge {
+	width: 100%;
+	margin-top: 1.75rem;
+	margin-bottom: 1.75rem;
+  overflow-x: auto;
+  background-color: $code-background-color;
+  -webkit-overflow-scrolling: touch;
+
+  div.highlight {
+    padding: 1rem;
+     
+    & > pre.highlight > code {
+	    font-size: .75rem;
+	    background-color: $code-background-color;
+	  }
+  }
+}
+
+@media (min-width: 1024px) {
+  figure.highlight.nolinenos > pre {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  figure.highlight.linenos > pre {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+}
+figure.highlight {
+	width: 100%;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+  overflow-x: auto;
+  background-color: $code-background-color;
+  -webkit-overflow-scrolling: touch;
+
+  pre {
+    padding: 1rem;
+    
+	  code {
+	    font-size: .75rem;
+	    background-color: $code-background-color;
+	  }
+  }
+}
+
+.highlight .rouge-table {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-shadow: none;
+
+  td,
+  pre {
+    font-size: .75rem;
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    background-color: $code-background-color;
+  }
+
+  td.gl {
+    padding-right: .75rem;
+  }
+
+  pre {
+    margin: 0;
+    line-height: 1.75;
+    
+    &.lineno {
+	    color: var(--code-lineno-color);
+	  }
+  }
+}
+
+.highlight .c {
+  color: #586e75;
+} // comment //
+.highlight .err {
+  color: #93a1a1;
+} // error //
+.highlight .g {
+  color: #93a1a1;
+} // generic //
+.highlight .k {
+  color: #859900;
+} // keyword //
+.highlight .l {
+  color: #93a1a1;
+} // literal //
+.highlight .n {
+  color: #93a1a1;
+} // name //
+.highlight .o {
+  color: #859900;
+} // operator //
+.highlight .x {
+  color: #cb4b16;
+} // other //
+.highlight .p {
+  color: #93a1a1;
+} // punctuation //
+.highlight .cm {
+  color: #586e75;
+} // comment.multiline //
+.highlight .cp {
+  color: #859900;
+} // comment.preproc //
+.highlight .c1 {
+  color: #586e75;
+} // comment.single //
+.highlight .cs {
+  color: #859900;
+} // comment.special //
+.highlight .gd {
+  color: #2aa198;
+} // generic.deleted //
+.highlight .ge {
+  font-style: italic;
+  color: #93a1a1;
+} // generic.emph //
+.highlight .gr {
+  color: #dc322f;
+} // generic.error //
+.highlight .gh {
+  color: #cb4b16;
+} // generic.heading //
+.highlight .gi {
+  color: #859900;
+} // generic.inserted //
+.highlight .go {
+  color: #93a1a1;
+} // generic.output //
+.highlight .gp {
+  color: #93a1a1;
+} // generic.prompt //
+.highlight .gs {
+  font-weight: bold;
+  color: #93a1a1;
+} // generic.strong //
+.highlight .gu {
+  color: #cb4b16;
+} // generic.subheading //
+.highlight .gt {
+  color: #93a1a1;
+} // generic.traceback //
+.highlight .kc {
+  color: #cb4b16;
+} // keyword.constant //
+.highlight .kd {
+  color: #268bd2;
+} // keyword.declaration //
+.highlight .kn {
+  color: #859900;
+} // keyword.namespace //
+.highlight .kp {
+  color: #859900;
+} // keyword.pseudo //
+.highlight .kr {
+  color: #268bd2;
+} // keyword.reserved //
+.highlight .kt {
+  color: #dc322f;
+} // keyword.type //
+.highlight .ld {
+  color: #93a1a1;
+} // literal.date //
+.highlight .m {
+  color: #2aa198;
+} // literal.number //
+.highlight .s {
+  color: #2aa198;
+} // literal.string //
+.highlight .na {
+  color: #555;
+} // name.attribute //
+.highlight .nb {
+  color: #b58900;
+} // name.builtin //
+.highlight .nc {
+  color: #268bd2;
+} // name.class //
+.highlight .no {
+  color: #cb4b16;
+} // name.constant //
+.highlight .nd {
+  color: #268bd2;
+} // name.decorator //
+.highlight .ni {
+  color: #cb4b16;
+} // name.entity //
+.highlight .ne {
+  color: #cb4b16;
+} // name.exception //
+.highlight .nf {
+  color: #268bd2;
+} // name.function //
+.highlight .nl {
+  color: #555;
+} // name.label //
+.highlight .nn {
+  color: #93a1a1;
+} // name.namespace //
+.highlight .nx {
+  color: #555;
+} // name.other //
+.highlight .py {
+  color: #93a1a1;
+} // name.property //
+.highlight .nt {
+  color: #268bd2;
+} // name.tag //
+.highlight .nv {
+  color: #268bd2;
+} // name.variable //
+.highlight .ow {
+  color: #859900;
+} // operator.word //
+.highlight .w {
+  color: #93a1a1;
+} // text.whitespace //
+.highlight .mf {
+  color: #2aa198;
+} // literal.number.float //
+.highlight .mh {
+  color: #2aa198;
+} // literal.number.hex //
+.highlight .mi {
+  color: #2aa198;
+} // literal.number.integer //
+.highlight .mo {
+  color: #2aa198;
+} // literal.number.oct //
+.highlight .sb {
+  color: #586e75;
+} // literal.string.backtick //
+.highlight .sc {
+  color: #2aa198;
+} // literal.string.char //
+.highlight .sd {
+  color: #93a1a1;
+} // literal.string.doc //
+.highlight .s2 {
+  color: #2aa198;
+} // literal.string.double //
+.highlight .se {
+  color: #cb4b16;
+} // literal.string.escape //
+.highlight .sh {
+  color: #93a1a1;
+} // literal.string.heredoc //
+.highlight .si {
+  color: #2aa198;
+} // literal.string.interpol //
+.highlight .sx {
+  color: #2aa198;
+} // literal.string.other //
+.highlight .sr {
+  color: #dc322f;
+} // literal.string.regex //
+.highlight .s1 {
+  color: #2aa198;
+} // literal.string.single //
+.highlight .ss {
+  color: #2aa198;
+} // literal.string.symbol //
+.highlight .bp {
+  color: #268bd2;
+} // name.builtin.pseudo //
+.highlight .vc {
+  color: #268bd2;
+} // name.variable.class //
+.highlight .vg {
+  color: #268bd2;
+} // name.variable.global //
+.highlight .vi {
+  color: #268bd2;
+} // name.variable.instance //
+.highlight .il {
+  color: #2aa198;
+} // literal.number.integer.long //
+
+//
+// Code examples (rendered)
+//
+
+.code-example {
+  padding: .75rem;
+  margin-bottom: .75rem;
+  overflow: auto;
+  border: 1px solid var(--code-border-color);
+  border-radius: 4px;
+
+  + .highlighter-rouge,
+  + figure.highlight {
+    position: relative;
+    margin-top: -1rem;
+    border-right: 1px solid var(--code-border-color);
+    border-bottom: 1px solid var(--code-border-color);
+    border-left: 1px solid var(--code-border-color);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}

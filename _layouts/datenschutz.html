@@ -1,0 +1,98 @@
+{% assign datenschutz = page %}
+{% assign texte = site.data.datenschutz %}
+{% capture _ %}{% increment counter %}{% endcapture %}
+<!DOCTYPE html>
+<html lang="{{ page.locale | default: site.locale | slice: 0,2  | default: 'de' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+    {% feed_meta %}
+    {% include gtm.html %}
+    {% include custom-head.html %}
+  </head>
+  <body>
+    <main role="Content">
+      <article>
+        <header>
+          <h1>
+            {{ texte.titel }}
+            <span>{{ texte.vom }}</span>
+          </h1>
+        </header>
+        
+        {% if datenschutz.preamble.allgemein or datenschutz.preamble.website or datenschutz.preamble.tools %}
+          {% include section.html section=texte.preamble controls=datenschutz.preamble %}
+        {% endif %}
+
+        {% if datenschutz.hinweis.zeigen or datenschutz.hinweis.stelle %}
+          {% include section.html section=texte.hinweis controls=datenschutz.hinweis %}
+          {% if datenschutz.hinweis.stelle %}
+            <p>
+              {{ site.data.impressum.betreiber.name }}<br>
+              {{ site.data.impressum.betreiber.adresse }}<br>
+              {{ site.data.impressum.betreiber.ort }}<br>
+              {{ site.data.impressum.betreiber.land }}
+            </p>
+            <p>
+              {{ site.data.impressum.betreiber.telefon }}<br>
+              {{ site.data.impressum.betreiber.email }}
+            </p>
+          {% endif %}
+        {% endif %}
+          
+        {% if datenschutz.pflicht.widerruf or datenschutz.pflicht.aufsichtsbehoerde or datenschutz.pflicht.datenuebertragbarkeit or datenschutz.pflicht.ssl or datenschutz.pflicht.encryption or datenschutz.pflicht.auskunft or datenschutz.pflicht.no_spam %}
+          {% include section.html section=texte.pflicht controls=datenschutz.pflicht %}
+        {% endif %}
+          
+        {% if datenschutz.beauftragter %}
+          {% include section.html section=texte.beauftragter controls=datenschutz.beauftragter %}
+          <p>
+            {{ page.beauftragter.name }}<br>
+            {{ page.beauftragter.adresse }}<br>
+            {{ page.beauftragter.ort }}<br>
+            {{ page.beauftragter.land }}
+          </p>
+          <p>
+            {{ page.beauftragter.telefon }}<br>
+            {{ page.beauftragter.email }}
+          </p>
+        {% endif %}        
+                  
+        {% if datenschutz.datenerfassung.cookies or datenschutz.datenerfassung.log_files or datenschutz.datenerfassung.contact_form or datenschutz.datenerfassung.registration or datenschutz.datenerfassung.facebook_connect or datenschutz.datenerfassung.comments or datenschutz.datenerfassung.kundendaten or datenschutz.datenerfassung.shop or datenschutz.datenerfassung.vertragsabschluss %}
+          {% include section.html section=texte.datenerfassung controls=datenschutz.datenerfassung %}
+        {% endif %}
+                  
+        {% if datenschutz.social_media_plugin.facebook or datenschutz.social_media_plugin.twitter or datenschutz.social_media_plugin.instagram or datenschutz.social_media_plugin.tumblr or datenschutz.social_media_plugin.linked_in or datenschutz.social_media_plugin.xing or datenschutz.social_media_plugin.pinterest %}
+          {% include section.html section=texte.social_media_plugin controls=datenschutz.social_media_plugin %}
+        {% endif %}
+        
+        {% if datenschutz.analytics.google or datenschutz.analytics.etracker or datenschutz.analytics.matomo or datenschutz.analytics.wordpress_stats or datenschutz.analytics.google_adsense or datenschutz.analytics.google_remarketing or datenschutz.analytics.google_adwords or datenschutz.analytics.recaptcha or datenschutz.analytics.facebook_pixel %}
+          {% include section.html section=texte.analytics controls=datenschutz.analytics %}
+        {% endif %}
+        
+        {% if datenschutz.newsletter or datenschutz.newsletter.mailchimp or datenschutz.newsletter.klick_tipp or datenschutz.newsletter.drip %}
+          {% include section.html section=texte.newsletter controls=datenschutz.newsletter %}
+        {% endif %}
+        
+        {% if datenschutz.plugins.youtube or datenschutz.plugins.vimeo or datenschutz.plugins.google_web_fonts or datenschutz.plugins.google_maps or datenschutz.plugins.sound_cloud or datenschutz.plugins.spotify %}
+          {% include section.html section=texte.plugins controls=datenschutz.plugins %}
+        {% endif %}
+        
+        {% if datenschutz.partner_programms %}
+          {% include section.html section=texte.partner_programms controls=datenschutz.partner_programms %}
+        {% endif %}
+        
+        {% if datenschutz.payment_providers.paypal or datenschutz.payment_providers.klarna or datenschutz.payment_providers.sofort or datenschutz.payment_providera.paydirect %}
+          {% include section.html section=texte.payment_providers controls=datenschutz.payment_providers %}
+        {% endif %}
+        
+      </article>
+    </main>
+    
+    {% include cookieconsent.html %}
+    {% include custom-pre-closing-body.html %}
+  </body>
+</html>

@@ -1,0 +1,32 @@
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: var(--form-field-bg-color);
+  border: 0 solid var(--form-field-border-color);
+  padding: 0;
+  margin-top: .25em;
+  width: 100%;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+textarea::-moz-placeholder {
+  color: var(--form-label-color);
+  font-weight: 300;
+  opacity: 1;
+}
+
+textarea:-ms-input-placeholder {
+  color: var(--form-label-color);
+  font-weight: 300;
+  opacity: 1;
+}
+
+textarea::placeholder {
+  color: var(--form-label-color);
+  font-weight: 300;
+  opacity: 1;
+}

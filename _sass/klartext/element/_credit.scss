@@ -1,0 +1,31 @@
+div.credit {
+	display: flex;
+	justify-content: flex-start;
+  align-items: flex-start;
+  align-content: space-between;
+	width: 100%;
+
+	img {
+	  flex: 1 0 30%;
+	  width: 150px;
+	  height: auto;
+	  margin: 0 .5em 1em 1em;
+	  border-right: 1px solid var(--credit-border-color);
+	}
+	q {
+	  flex: 1 0 60%;
+	  font-family: $sans-serif;
+	  font-size: .75rem;
+	  
+	  &::before, &::after {
+	    content: "";
+	  }
+	}
+}
+@media (min-width: 1024px) {
+  
+  div.credit {
+    max-width: 40rem;
+    margin: 1.74rem auto;
+  } 
+}

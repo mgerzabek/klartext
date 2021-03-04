@@ -1,0 +1,162 @@
+
+/* Colors ------------------------------------------------------------------- */
+$font-color                           :   #374151 !default;
+$link-color                           :   #cfd8e3 !default;
+$black                                :   rgba(0,0,0,1) !default;
+$white                                :   rgba(255, 255, 255, 1) !default;
+$gray-50                              :   #f8fafc !default;
+$gray-100                             :   #f1f5f9 !default;
+$gray-200                             :   #e2e8f0 !default;
+$gray-300                             :   #cfd8e3 !default;
+$gray-400                             :   #97a6ba !default;
+$gray-500                             :   #64748b !default;
+$gray-600                             :   #475569 !default;
+$gray-700                             :   #364152 !default;
+$gray-800                             :   #27303f !default;
+$gray-900                             :   #1a202e !default;    
+
+/* Fonts -------------------------------------------------------------------- */
+$serif                                :   'Merriweather', 'Apple Garamond', Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$sans-serif                           :   -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$monospace                            :   SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$cursive                              :   'Fredericka the Great', cursive !default;
+
+/* vendor/base.scss --------------------------------------------------------- */
+$base-font                            :   $serif;
+$base-font-leading                    :   1.75;
+$mono-font                            :   $monospace;
+$mono-font-leading                    :   1.25;
+$font-size-on-mobile                  :   87.5%;
+$font-size-on-desktop                 :   112.5%;
+
+/* typography/block.scss ---------------------------------------------------- */
+$blockquote-bg-color                  :   #f1f5f9 !default;
+$blockquote-border-color              :   #97a6ba !default;
+$blockquote-color                     :   $font-color;
+$initiale-font                        :   $cursive;
+$initiale-color                       :   $font-color;
+$inline-code-color                    :   #475569 !default;
+$inline-code-bg-color                 :   #e2e8f0 !default;
+
+/* typography/inline.scss --------------------------------------------------- */
+$em-weight                            :   500 !default;
+
+/* typography/manual.scss --------------------------------------------------- */
+$mark-color                           :   #ffeda6 !default;
+
+/* code/styles.scss --------------------------------------------------------- */
+$code-border-color                    :   #e5e7eb !default;
+$code-background-color                :   #fff !default;
+$code-lineno-color                    :   #6b7280 !default;
+
+/* table/styles.scss -------------------------------------------------------- */
+$table-bg-color                       :   #f8fafc !default;
+$table-thead-bg-color                 :   #cfd8e3 !default;
+$table-odd-bg-color                   :   $white;
+$table-even-bg-color                  :   $table-bg-color;
+$table-border-color                   :   #cfd8e3 !default;
+
+/* form/form.scss ----------------------------------------------------------- */
+$form-border-color                    :   #e5e7eb !default;
+$form-legend-color                    :   #71767C !default;
+$form-label-color                     :   #ACACAC !default;
+$form-field-border-color              :   #ECECEC !default;
+$form-field-focus-color               :   #0075d5 !default;
+$form-field-bg-color                  :   #ffffff !default;
+$form-field-valid-color               :   green !default;
+$form-field-border-color              :   #d2d6dc !default;
+$form-field-focus-shadow              :   rgba(164, 202, 254, 0.45) !default;
+$form-field-focus-border              :   #a4cafe !default;
+
+/* form/checkbox.scss ------------------------------------------------------- */
+$form-checkbox-color                  :   #3f83f8 !default;
+
+/* form/radio.scss ---------------------------------------------------------- */
+$form-radio-color                     :   #3f83f8 !default;
+
+/* element/audio.scss ------------------------------------------------------- */
+$audio-source-color                   :   $gray-400;
+$audio-description-color              :   $gray-600;
+$audio-meta-info-color                :   $white;
+$audio-progress-bg-color              :   #313252 !default;
+$audio-progress-color                 :   #00a0ff !default;
+$audio-meta-info-bg-color             :   #202136 !default;
+
+/* element/button.scss ------------------------------------------------------ */
+$button-color                         :   $white;
+$button-bg-color                      :   $gray-600;
+$button-hover-color                   :   $gray-700;
+$button-focus-color                   :   $gray-800;
+$button-active-color                  :   $gray-700;
+
+/* element/cookieconsent.scss ----------------------------------------------- */
+$cc-bg-color                          :   #057a55 !default;
+$cc-icon-bg-color                     :   #03543f !default;
+$cc-button-hover-color                :   #0e9f6e !default;
+$cc-button-color                      :   #057a55 !default;
+$cc-button-hover-color                :   #0e9f6e !default;
+$cc-message-color                     :   $white;
+$cc-svg-icon-color                    :   $white;
+$cc-accept-button-bg-color            :   $white;
+$cc-accept-button-shadow              :   rgba(118, 169, 250, 0.45) !default;
+
+/* element/credit.scss ------------------------------------------------------ */
+$credit-border-color                  :   #333 !default;
+
+/* element/figure.scss ------------------------------------------------------ */
+$figure-figcaption-color              :   $gray-600;
+$figure-header-color                  :   $gray-400;
+
+/* element/footer.scss ------------------------------------------------------ */
+$footer-icon-color                    :   $gray-500;
+$footer-icon-color-hover              :   $gray-800;
+$footer-border-color                  :   #e5e7eb !default;
+
+/* element/header.scss ------------------------------------------------------ */
+$header-kicker-color                  :   $gray-500;
+$header-description-color             :   $gray-700;
+$header-meta-color                    :   $gray-500;
+$header-figure-bg-color               :   $white;
+
+/* element/navigation.scss -------------------------------------------------- */
+$nav-bg-color                         :   $white;
+$nav-border-color                     :   rgba(229, 231, 235, 1) !default;
+$nav-open-sidebar-color               :   rgba(107, 114, 128, 1) !default;
+$nav-open-sidebar-focus-color         :   rgba(16, 185, 129, 1) !default;
+$nav-top-link-active-bg-color         :   rgba(243, 244, 246, 1) !default;
+$nav-top-link-active-color            :   rgba(17, 24, 39, 1) !default;
+$nav-top-link-inactive-color          :   rgba(75, 85, 99, 1) !default;
+$nav-top-link-inactive-hover-color    :   rgba(17, 24, 39, 1) !default;
+$nav-top-link-inactive-hover-bg-color :   rgba(249, 250, 251, 1) !default;
+$nav-search-field-color               :   rgba(156, 163, 175, 1) !default;
+$nav-search-field-within-color        :   rgba(75, 85, 99, 1) !default;
+$nav-search-field-text-color          :   rgba(17, 24, 39, 1) !default;
+$nav-search-field-placeholder-color   :   rgba(107, 114, 128, 1) !default;
+$nav-search-field-placeholder-focus   :   rgba(156, 163, 175, 1) !default;
+$nav-app-menu-border-color            :   rgba(229, 231, 235, 1) !default;
+$nav-cta-link-color                   :   $white;
+$nav-cta-link-bg-color                :   $gray-600;
+$nav-cta-link-bg-hover-color          :   $gray-700;
+$nav-cta-link-focus-color             :   $gray-200;
+$nav-cta-link-bg-active-color         :   $gray-500;
+
+/* element/sidebar.scss ----------------------------------------------------- */
+$sidebar-overlay-bg-color             :   rgba(75, 85, 99, 1) !default;
+$sidebar-bg-color                     :   rgba(255, 255, 255, 1) !default;
+$sidebar-close-button-color           :   rgba(229, 231, 235, 1) !default;
+$sidebar-close-button-hover-color     :   $white;
+$sidebar-item-color                   :   rgba(156, 163, 175, 1) !default;
+$sidebar-group-hover-color            :   rgba(107, 114, 128, 1) !default;
+$sidebar-item-active-color            :   rgba(17, 24, 39, 1) !default;
+$sidebar-item-active-bg-color         :   rgba(243, 244, 246, 1) !default;
+$sidebar-item-inactive-color          :   rgba(75, 85, 99, 1) !default;
+$sidebar-item-inactive-hover-bg-color :   rgba(249, 250, 251, 1) !default;
+$sidebar-item-inactive-hover-color    :   rgba(17, 24, 39, 1) !default;
+
+/* element/social.scss ------------------------------------------------------ */
+$social-icon-color                    :   $gray-500;
+$social-icon-color-hover              :   $gray-800;
+
+/* element/youtube.scss ----------------------------------------------------- */
+$youtube-kicker-color                 :   #e53e3e !default;
+$youtube-description-color            :   $gray-600;

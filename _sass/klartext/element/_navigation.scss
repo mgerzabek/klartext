@@ -1,0 +1,230 @@
+/*
+div.space-y {
+	padding-top: 4rem;
+}
+*/
+div#navigation { 
+	/*
+	position: fixed; 
+	width: 100%; 
+	z-index: 50;
+	*/
+	background-color: var(--nav-bg-color); 
+	border-color: var(--nav-border-color); 
+	border-bottom-width: 1px; 
+	height: 4rem; 
+	
+	.navigation { 
+    border-color: var(--nav-border-color); 
+    border-bottom-width: 1px; 
+    display: flex; 
+    height: 4rem; 
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 80rem; 
+    position: relative; 
+    z-index: 10; 
+  }
+}
+
+button.open-sidebar, a.open-sidebar { 
+	border-color: var(--nav-border-color); 
+	border-right-width: 1px; 
+	display: flex; 
+	flex-direction: row; 
+	align-items: center; 
+	padding-left: 1rem; 
+	color: var(--nav-open-sidebar-color); 
+	
+	&:focus { 
+	  outline: 2px solid transparent; 
+	  outline-offset: 2px; 
+	  box-shadow: inset 0 0 0 0px var(--white), inset 0 0 0 2px var(--nav-open-sidebar-focus-color), 0 0 var(--black); 
+  }
+	  
+	svg { 
+	  width: 1rem; 
+	  height: 1rem; 
+	  align-self: flex-end; 
+	}
+	
+	.icon { 
+	  display: block; 
+	  height: 1.5rem; 
+	  width: auto; 
+	}
+	
+	.small { 
+	  display: none; 
+	  height: 2rem; 
+	  width: auto; 
+	}
+}
+a.open-sidebar {
+	padding-right: 1rem;
+}
+@media (min-width: 1024px) { 
+	button.open-sidebar, a.open-sidebar {
+	  .icon { 
+	    display: none; 
+	  }
+	  .small { 
+	    display: block; 
+	  } 
+  }
+}
+
+a.top { 
+  display: flex; 
+  align-items: center; 
+  font-weight: 500; 
+  line-height: 1.25rem; 
+  font-size: 0.875rem;
+  padding: 0.5rem;  
+}
+
+a.top__active { 
+  background-color: var(--nav-top-link-active-bg-color); 
+  color: var(--nav-top-link-active-color); 
+}
+
+a.top__inactive { 
+  color: var(--nav-top-link-inactive-color); 
+  
+  &:hover { 
+    background-color: var(--nav-top-link-inactive-hover-bg-color); 
+    color: var(--nav-top-link-inactive-hover-color); 
+  }
+}
+
+div.search { 
+	display: flex; 
+	flex: 1 1 0%;
+	padding-left: 1rem; 
+  padding-right: 1rem; 
+}
+
+div.search-field { 
+	position: relative; 
+	color: var(--nav-search-field-color); 
+	width: 100%; 
+	
+	&:focus-within { 
+	  color: var(--nav-search-field-within-color); 
+  }
+}
+
+div.search-icon { 
+	display: flex; 
+	align-items: center; 
+	pointer-events: none; 
+	position: absolute; 
+	top: 0px; 
+	bottom: 0px; 
+	left: 0px;
+	
+	svg { 
+	  height: 1.25rem; 
+	  width: 1.25rem; 
+	} 
+}
+
+input.search-field { 
+	border-color: transparent; 
+	display: block; 
+	height: 100%; 
+  width: 100%;
+	padding: 0.5rem 0.75rem 0.5rem 2rem; 
+  color: var(--nav-search-field-text-color); 
+  	
+	&::-moz-placeholder { 
+	  color: var(--nav-search-field-placeholder-color); 
+  }
+  &:-ms-input-placeholder { 
+    color: var(--nav-search-field-placeholder-color); 
+  }
+  &::placeholder { 
+    color: var(--nav-search-field-placeholder-color); 
+  }
+  
+  &:focus { 
+    border-color: transparent; 
+    outline: 2px solid transparent; 
+    outline-offset: 2px; 
+  }
+  &:focus::-moz-placeholder { 
+    color: var(--nav-search-field-placeholder-focus); 
+  }
+  &:focus:-ms-input-placeholder { 
+    color: var(--nav-search-field-placeholder-focus); 
+  }
+  &:focus::placeholder { 
+    color: var(--nav-search-field-placeholder-focus); 
+  }
+  &:focus { 
+    box-shadow: inset 0 0 0 0px var(--white), inset 0 0 0 0px var(--white), 0 0 var(--black);
+  }
+}
+
+@media (min-width: 640px) { 
+  input.search-field { 
+    font-size: 0.875rem; 
+    line-height: 1.25rem; 
+  } 
+}
+
+div.app-menu { 
+  display: flex; 
+  align-items: center; 
+  margin-left: 1rem; 
+  border-color: var(--nav-app-menu-border-color); 
+  border-left-width: 1px; 
+  padding-left: 0.25rem; 
+}
+@media (min-width: 1024px) { 
+  div.app-menu { 
+    margin-left: 1.5rem; 
+  }
+}
+
+div.cta { 
+	padding: 0.5rem 1rem;
+}
+
+a.cta-link { 
+	background-color: var(--nav-cta-link-bg-color); 
+	border-radius: 0.375rem; 
+	display: inline-flex; 
+	align-items: center; 
+	font-weight: 500; 
+	font-size: 0.875rem; 
+	line-height: 1rem; 
+	padding: 0.5rem 1rem; 
+	color: var(--nav-cta-link-color); 
+	
+	&:hover { 
+	  background-color: var(--nav-cta-link-bg-hover-color); 
+	}
+	&:focus { 
+	  border-color: var(--nav-cta-link-focus-color); 
+	  outline: 2px solid transparent; 
+	  outline-offset: 2px; 
+	}
+	&:active { 
+	  background-color: var(--nav-cta-link-bg-active-color); 
+	}
+	svg { 
+	  height: 1rem; 
+	  width: 1rem; 
+	}
+	span {
+	  display: none;
+	}
+}
+
+@media (min-width: 1024px) {
+	a.cta-link span {
+	  display: inline-block;
+	  margin-left: 0.5rem;
+	}
+}

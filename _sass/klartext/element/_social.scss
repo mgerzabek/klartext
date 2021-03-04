@@ -1,0 +1,18 @@
+.social {
+	list-style-type: none;
+	
+	li {
+	 display: inline-flex;
+	 
+		a[rel='me'] svg {
+			width: 2rem;
+			height: 2rem;
+		  fill: currentColor;
+		  color: var(--social-icon-color);
+		  
+		  &:hover {
+		    color: var(--social-icon-color-hover);
+		  }
+		}
+	}
+}

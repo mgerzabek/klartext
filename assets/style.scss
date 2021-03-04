@@ -1,0 +1,36 @@
+---
+# Der Frontmatter Block muss bestehen bleiben, damit diese Datei transformiert wird.
+---
+@charset "utf-8";
+
+/* ----------------------------------------------------------------------------
+ * (i) Fonts importieren
+ * -------------------------------------------------------------------------- */
+@import url( "https://fonts.googleapis.com/css?family=Fredericka+the+Great|Merriweather:300,300i,400,400i,700,700i,900" );
+
+/* ----------------------------------------------------------------------------
+ * (ii) Elements Styling System importieren
+ * -------------------------------------------------------------------------- */
+@import "klartext";
+
+/* ----------------------------------------------------------------------------
+ * (iii) Review Styles nur im Entwicklermodus einfügen
+ * -------------------------------------------------------------------------- */
+{% if jekyll.environment != 'production' %}
+
+  /* 
+   * Die Review Styles werden nur im Entwicklermodus eingebunden. Autoren 
+   * können ihre Texte damit auszeichnen, um typische Arbeitsaufgaben zu
+   * markieren. Die Tags können auch auf produktiven Seiten enthalten sein.
+   * Sie werden dann nicht gesondert dargestellt.
+   *
+   * .recherche
+   * .quelle
+   * .lesbarkeit
+   * .stil
+   * .zielgruppe
+   */
+  @import "klartext/review/styles";
+  // https://gist.github.com/addyosmani/fd3999ea7fce242756b1
+  
+{% endif %}

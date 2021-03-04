@@ -1,0 +1,55 @@
+{% assign sidebar = site.data.navigation.sidebar | default: false %}
+{% assign search = site.data.navigation.search | default: false %}
+<div id="navigation">
+  <div class="navigation">
+    {% if sidebar %}
+      <button class="open-sidebar"
+              x-on:click="sidebarOpen = true">
+        <span class="sr-only">Sidebar öffnen</span>
+        <img class="icon" src="{{ site.data.ci.logos.icon.path }}" alt="{{ site.data.ci.logos.icon.alt }}">
+        <img class="small" src="{{ site.data.ci.logos.small.path }}" alt="{{ site.data.ci.logos.small.alt }}">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+        </svg>
+      </button>
+    {% else %}
+      <a class="open-sidebar" href="/">
+        <img class="icon" src="{{ site.data.ci.logos.icon.path }}" alt="{{ site.data.ci.logos.icon.alt }}">
+        <img class="small" src="{{ site.data.ci.logos.small.path }}" alt="{{ site.data.ci.logos.small.alt }}">
+      </a>
+    {% endif %}
+    {% if search %}
+      <div class="search">
+        <label for="search-field" class="sr-only">Suche</label>
+        <div class="search-field">
+          <div class="search-icon">
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <input id="search-field" class="search-field" placeholder="Finden (❖ Alt+Shift+f  Ctrl+Opt+f)" type="search" name="search" accesskey="f">
+        </div>
+      </div>
+    {% else %}
+      <div class="search">
+        {% for item in site.data.navigation.top %}
+          {% assign startsWith = page.url | split: item.href %}
+          <a href="{{ item.href }}" class="top {% unless startsWith[0] == page.url %}top__active{% else %}top__inactive{% endunless %}">
+            {{ item.text }}
+          </a>
+        {% endfor %}
+      </div>
+    {% endif %}
+    <div class="app-menu">
+      <div class="cta">
+        <a href="{{ site.data.navigation.cta.href }}"
+           class="cta-link">
+          <svg viewBox="0 0 20 20" fill="currentColor">
+            <path d="M13 8V0L8.11 5.87 3 12h4v8L17 8h-4z"/>
+          </svg>
+          <span>{{ site.data.navigation.cta.text }}</span> 
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

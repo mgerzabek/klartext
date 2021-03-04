@@ -1,0 +1,69 @@
+div.youtube {
+	width: 100%;
+	margin: 1.75rem 0;
+	font-family: $sans-serif;
+	
+	p.video-header {
+	  margin: 0;
+	  max-width: inherit;
+    padding: 0 0.25rem 0.25rem;
+    font-size: 0.75rem;
+    color: var(--figure-header-color);
+    text-align: right
+  }
+  h4.video-title {
+    font-weight: 600;
+    margin: 0;
+    padding: 0.25rem 0 0 0.25rem;
+    max-width: inherit;
+  }
+  p.video-kicker {
+    margin: -0.5rem 0 0;
+    padding: 0 0 0 0.25rem;
+    max-width: inherit;
+    font-size: 0.875rem;
+    color: var(--youtube-kicker-color);
+  }
+  p.video-description {
+    margin: 0;
+    max-width: inherit;
+    padding: 0.25rem;
+    font-size: 0.875rem;
+    color: var(--youtube-description-color);
+    line-height: 1.25;
+  }
+	.video-wrapper {
+	  position: relative;
+	  padding-bottom: 56.25%;
+	  padding-top: 25px;
+	  height: 0;
+	}
+	.video-wrapper iframe {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	}
+	.video-wrapper::after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+	/* Modifier class for 16:9 aspect ratio */
+	.video-wrapper-16by9 {
+	  padding-bottom: 56.25%;
+	}
+	
+	/* Modifier class for 4:3 aspect ratio */
+	.video-wrapper-4by3 {
+	  padding-bottom: 75%;
+	}
+}
+@media (min-width: 1024px) {
+	
+	div.youtube {
+	  max-width: 40rem;
+	  margin: 1.74rem auto;
+	} 
+}

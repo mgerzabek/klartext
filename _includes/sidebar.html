@@ -1,0 +1,57 @@
+<div id="sidebar" 
+     x-show="sidebarOpen">
+  <div class="overlay"
+       aria-hidden="true"
+       x-on:click="sidebarOpen = false"
+       x-show="sidebarOpen"
+       x-transition:enter="enter"
+       x-transition:enter-start="enter-start"
+       x-transition:enter-end="enter-end"
+       x-transition:leave="leave"
+       x-transition:leave-start="leave-start"
+       x-transition:leave-end="leave-end"> 
+    <div class="background"></div>
+  </div>
+  <div class="sidebar"
+       x-show="sidebarOpen"
+       x-transition:enter="enter"
+       x-transition:enter-start="enter-start"
+       x-transition:enter-end="enter-end"
+       x-transition:leave="leave"
+       x-transition:leave-start="leave-start"
+       x-transition:leave-end="leave-end">
+    <div class="close-sidebar">
+      <button x-show="sidebarOpen"
+              x-on:click="setTimeout(() => sidebarOpen = false, 200);">
+        <span class="sr-only">Close sidebar</span>
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <div class="logo">
+      <a href="/"><img src="{{ site.data.ci.logos.small.path }}" alt="{{ site.data.ci.logos.small.alt }}"></a>
+    </div>
+    <div class="menu">
+      <nav role="navigation" aria-label="Main">
+        {% for item in site.data.navigation.menu %}
+          {% assign startsWith = page.url | split: item.href %}
+          <a href="{{ item.href }}" class="group nav {% unless startsWith[0] == page.url %}nav__active{% else %}nav__inactive{% endunless %}">
+            {% if item.icon %}{{ item.icon }}{% endif %}
+            {{ item.text }}
+          </a>
+          {% if item.children %}
+            {% for subitem in item.children %}
+              {% assign startsWith = page.url | split: subitem.href %}
+              <a href="{{ subitem.href }}" class="group nav-sub {% unless startsWith[0] == page.url %}nav__active{% else %}nav__inactive{% endunless %}">
+                {{ subitem.text }}
+              </a>
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      </nav>
+    </div>
+  </div>
+  <div class="sidebar-spacer">
+  </div>
+</div>

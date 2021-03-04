@@ -1,0 +1,133 @@
+
+input[type="text"] {
+	-webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-print-color-adjust: exact;
+          color-adjust: exact;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 100%;
+  border: 0;
+  top: .9em;
+  background: none;
+  padding: .0625em;
+  font-size: 1em;
+  font-family: sans-serif;
+  letter-spacing: 0.012em;
+}
+
+input[type="text"] + label {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  padding: .0625em;
+  color: var(--form-label-color);
+  font-size: 1em;
+  letter-spacing: 0.012em;
+  animation-name: labelIn;
+  animation-duration: .5s;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+ }
+
+input[type="text"]:focus + label {
+  animation-name: labelOut;
+  animation-duration: .5s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+ input[type="text"]:valid + label {
+  animation-name: fieldValid;
+  animation-duration: .5s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+@keyframes fieldValid {
+  0% {
+    font-size: .65em;
+    font-weight: 400;
+    opacity: 1;
+    left: 1px;
+    top: 0.2em;
+    color: var(--form-field-focus-color);
+  }
+  100% {
+    font-size: .65em;
+    font-weight: 400;
+    opacity: 1;
+    left: 1px;
+    top: 0.2em;
+    color: var(--form-field-valid-color);
+  }
+}
+@keyframes labelIn {
+  0% {
+    font-size: 1em;
+    font-weight: 300;
+    opacity: 1;
+    left: 1px;
+    top: 1.2em;
+  }
+  50% {
+    font-size: 1em;
+    font-weight: 300;
+    opacity: 0;
+    left: 1em;
+    top: 1.2em;
+  }
+  50.01% {
+    font-size: .65em;
+    font-weight: 400;
+    opacity: 0;
+    left: 1em;
+    top: 0.2em;
+    color: var(--form-field-focus-color);
+  }
+  100% {
+    font-size: .65em;
+    font-weight: 400;
+    opacity: 1;
+    left: 1px;
+    top: 0.2em;
+    color: var(--form-field-focus-color);
+  }
+}
+@keyframes labelOut {
+  0% {
+    font-size: 1em;
+    font-weight: 300;
+    opacity: 1;
+    left: 1px;
+    top: 1.2em;
+  }
+  50% {
+    font-size: 1em;
+    font-weight: 300;
+    opacity: 0;
+    left: 1em;
+    top: 1.2em;
+  }
+  50.01% {
+    font-size: .65em;
+    font-weight: 400;
+    opacity: 0;
+    left: 1em;
+    top: 0.2em;
+    color: var(--form-field-focus-color);
+  }
+  100% {
+    font-size: .65em;
+    font-weight: 400;
+    opacity: 1;
+    left: 1px;
+    top: 0.2em;
+    color: var(--form-field-focus-color);
+  }
+}

@@ -1,0 +1,27 @@
+footer {
+	font-size: smaller;
+	margin-top: 2.5rem;
+	border-top: 1px solid var(--footer-border-color);
+	padding-top: 1.5rem;
+	padding-bottom: 7.5rem;
+
+	a {
+	
+	  &.feed-subscribe {
+	    display: flex;
+	    align-items: center;
+	    
+	    span {
+	      margin-left: .25rem;
+	    }
+	    svg {
+	      fill: currentColor;
+	      color: var(--footer-icon-color);
+	      
+	      &:hover {
+	        color: var(--footer-icon-color-hover);
+	      }
+	    }
+	  }  
+	}
+}	

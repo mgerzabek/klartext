@@ -1,0 +1,14 @@
+{% assign section = include.section %}
+{% assign controls = include.controls %}
+<section>
+  {% if section.label %}
+    <h2>{% increment counter %}{{ section.label }}</h2>
+  {% endif %}
+  {% for hash in section.blocks %}
+    {% assign switch = hash[0] %}
+    {% if controls[switch] %}
+      {% assign blocks = section.blocks[switch] %}
+      {% include text.html block=blocks %}
+    {% endif %}
+  {% endfor %}
+</section>

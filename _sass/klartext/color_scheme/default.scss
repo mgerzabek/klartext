@@ -1,0 +1,123 @@
+
+:root {
+  --font-size-on-mobile: #{$font-size-on-mobile};
+  --font-size-on-desktop: #{$font-size-on-desktop};
+  --font-color: #{$font-color};
+  --blockquote-bg-color: #{$blockquote-bg-color};
+  --blockquote-border-color: #{$blockquote-border-color};
+  --blockquote-color: #{$blockquote-color};
+  --link-color: #{$link-color};
+  --mark-color: #{$mark-color};
+  --inline-code-color: #{$inline-code-color};
+  --inline-code-bg-color: #{$inline-code-bg-color};
+  --white: #{$white};
+  --gray-50: #{$gray-50};
+  --gray-100: #{$gray-100};
+  --gray-200: #{$gray-200};
+  --gray-300: #{$gray-300}; 
+  --gray-400: #{$gray-400};
+  --gray-500: #{$gray-500};
+  --gray-600: #{$gray-600};
+  --gray-700: #{$gray-700};
+  --gray-800: #{$gray-800};
+  --gray-900: #{$gray-900};
+  --initiale-color: #{$initiale-color};
+
+  --code-border-color: #{$code-border-color};
+  --code-lineno-color: #{$code-lineno-color};
+  
+  --table-bg-color: #{$white};
+  --table-thead-bg-color: #{$white};
+  --table-odd-bg-color: #{$white};
+  --table-even-bg-color: #{$white};
+  --table-border-color: #{$table-border-color};
+  
+  --form-border-color: #{$form-border-color};
+  --form-legend-color: #{$form-legend-color};
+  --form-label-color: #{$form-label-color};
+  --form-field-border-color: #{$form-field-border-color};
+  --form-field-bg-color: #{$form-field-bg-color};
+  --form-field-focus-color: #{$form-field-focus-color};
+  --form-field-focus-shadow: #{$form-field-focus-shadow};
+  --form-field-focus-border: #{$form-field-focus-border};
+  --form-field-valid-color: #{$form-field-valid-color};
+  --form-checkbox-color: #{$form-checkbox-color};
+  --form-radio-color: #{$form-radio-color};
+
+  --audio-source-color: #{$audio-source-color};
+  --audio-description-color: #{$audio-description-color};
+  --audio-meta-info-color: #{$audio-meta-info-color};
+  --audio-progress-bg-color: #{$audio-progress-bg-color};
+  --audio-progress-color: #{$audio-progress-color};
+  --audio-meta-info-bg-color: #{$audio-meta-info-bg-color};
+
+  --button-color: #{$button-color};
+  --button-bg-color: #{$button-bg-color};
+  --button-hover-color: #{$button-hover-color};
+  --button-focus-color: #{$button-focus-color};
+  --button-active-color: #{$button-active-color};
+
+  --cc-bg-color: #{$cc-bg-color};  
+  --cc-icon-bg-color: #{$cc-icon-bg-color};
+  --cc-button-hover-color: #{$cc-button-hover-color};
+  --cc-button-color: #{$cc-button-color};
+  --cc-button-hover-color: #{$cc-button-hover-color};
+  --cc-message-color: #{$cc-message-color};
+  --cc-svg-icon-color: #{$cc-svg-icon-color};
+  --cc-accept-button-bg-color: #{$cc-accept-button-bg-color};
+  --cc-accept-button-shadow: #{$cc-accept-button-shadow};
+    
+  --credit-border-color: #{$credit-border-color};
+
+  --figure-figcaption-color: #{$figure-figcaption-color};
+  --figure-header-color: #{$figure-header-color};
+  
+  --footer-icon-color: #{$footer-icon-color};
+  --footer-icon-color-hover: #{$footer-icon-color-hover};
+  --footer-border-color: #{$footer-border-color};
+  
+  --header-figure-bg-color: #{$header-figure-bg-color};
+  --header-kicker-color: #{$header-kicker-color};
+  --header-description-color: #{$header-description-color};
+  --header-meta-color: #{$header-meta-color};
+
+  --nav-bg-color: #{$nav-bg-color};
+  --nav-border-color: #{$nav-border-color};
+  --nav-open-sidebar-color: #{$nav-open-sidebar-color};
+  --nav-open-sidebar-focus-color: #{$nav-open-sidebar-focus-color};
+  --nav-top-link-active-bg-color: #{$nav-top-link-active-bg-color};
+  --nav-top-link-active-color: #{$nav-top-link-active-color};
+  --nav-top-link-inactive-color: #{$nav-top-link-inactive-color};
+  --nav-top-link-inactive-hover-color: #{$nav-top-link-inactive-hover-color};
+  --nav-top-link-inactive-hover-bg-color: #{$nav-top-link-inactive-hover-bg-color};
+  --nav-search-field-color: #{$nav-search-field-color};
+  --nav-search-field-within-color: #{$nav-search-field-within-color};
+  --nav-search-field-text-color: #{$nav-search-field-text-color};
+  --nav-search-field-placeholder-color: #{$nav-search-field-placeholder-color};
+  --nav-search-field-placeholder-focus: #{$nav-search-field-placeholder-focus};
+  --nav-app-menu-border-color: #{$nav-app-menu-border-color};
+  --nav-cta-link-color: #{$nav-cta-link-color};
+  --nav-cta-link-bg-color: #{$nav-cta-link-bg-color};
+  --nav-cta-link-bg-hover-color: #{$nav-cta-link-bg-hover-color};
+  --nav-cta-link-focus-color: #{$nav-cta-link-focus-color};
+  --nav-cta-link-bg-active-color: #{$nav-cta-link-bg-active-color};
+  
+  --sidebar-overlay-bg-color: #{$sidebar-overlay-bg-color};
+  --sidebar-bg-color: #{$sidebar-bg-color};
+  --sidebar-close-button-color: #{$sidebar-close-button-color};
+  --sidebar-close-button-hover-color: #{$sidebar-close-button-hover-color};
+  --sidebar-item-color: #{$sidebar-item-color};
+  --sidebar-group-hover-color: #{$sidebar-group-hover-color};
+  --sidebar-item-active-color: #{$sidebar-item-active-color};
+  --sidebar-item-active-bg-color: #{$sidebar-item-active-bg-color};
+  --sidebar-item-inactive-color: #{$sidebar-item-inactive-color};
+  --sidebar-item-inactive-hover-bg-color: #{$sidebar-item-inactive-hover-bg-color};
+  --sidebar-item-inactive-hover-color: #{$sidebar-item-inactive-hover-color};
+  
+  --social-icon-color: #{$social-icon-color};
+  --social-icon-color-hover: #{$social-icon-color-hover};
+  
+  --youtube-kicker-color: #{$youtube-kicker-color};
+  --youtube-description-color: #{$youtube-description-color};
+
+}

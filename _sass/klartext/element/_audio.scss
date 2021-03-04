@@ -1,0 +1,169 @@
+div.audio {
+	width: 100%;
+	margin-top: 1.75rem;
+	margin-bottom: 1.75rem;
+	
+	p.source {
+	  margin: 0;
+	  max-width: inherit;
+	  font-family: $sans-serif;
+	  padding: 1px .25rem;
+	  text-align: right;
+	  font-size: x-small;
+	  color: var(--audio-source-color)
+	}
+	p.description {
+	  margin: 0;
+    max-width: inherit;
+    font-family: $sans-serif;
+    padding: 1px .25rem;
+    text-align: left;
+    font-size: small;
+    color: var(--audio-description-color)
+	}
+}
+@media (min-width: 1024px) {
+	div.audio {
+	  max-width: 40rem;
+	  margin: 1.75rem auto;
+	}	
+}
+div.control-container {
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+div.control-container div.amplitude-play-pause {
+  width: 74px;
+  height: 74px;
+  cursor: pointer;
+  float: left;
+  margin-left: 10px;
+}
+
+div.control-container div.amplitude-play-pause.amplitude-paused {
+  background: url("data:image/svg+xml,%3Csvg width='75' height='75' xmlns='http://www.w3.org/2000/svg'%3E%3Cg transform='translate(1 1)' fill='none' fill-rule='evenodd'%3E%3Ccircle stroke='%2342435F' cx='36.5' cy='36.5' r='36.5'/%3E%3Cpath d='M47.625 35.803L27.646 23.426C26.189 22.474 25 23.173 25 24.988V49.01c0 1.812 1.188 2.518 2.646 1.562l19.979-12.375s.711-.5.711-1.197c0-.7-.711-1.198-.711-1.198z' fill='%23FFF' fill-rule='nonzero'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-size: cover;
+}
+
+div.control-container div.amplitude-play-pause.amplitude-playing {
+  background: url("data:image/svg+xml,%3Csvg width='75' height='75' xmlns='http://www.w3.org/2000/svg'%3E%3Cg transform='translate(1 1)' fill='none' fill-rule='evenodd'%3E%3Ccircle stroke='%2342435F' cx='36.5' cy='36.5' r='36.5'/%3E%3Cpath d='M30.521 23h-4.328C24.982 23 24 23.98 24 25.201v23.592c0 1.221.982 2.207 2.193 2.207h4.328a2.195 2.195 0 002.188-2.207V25.201A2.193 2.193 0 0030.521 23zM46.908 23h-4.33a2.19 2.19 0 00-2.188 2.201v23.592c0 1.221.979 2.207 2.188 2.207h4.33a2.193 2.193 0 002.188-2.207V25.201A2.186 2.186 0 0046.908 23z' fill='%23FFF' fill-rule='nonzero'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-size: cover;
+}
+
+div.control-container div.meta-container {
+  float: left;
+  width: calc(100% - 84px);
+  text-align: center;
+  color: var(--audio-meta-info-color);
+  margin-top: 10px;
+}
+
+div.control-container div.meta-container span[data-amplitude-song-info="title"]
+  {
+  font-family: $sans-serif;
+  font-size: 18px;
+  color: var(--audio-meta-info-color);
+  display: block;
+}
+
+div.control-container div.meta-container span[data-amplitude-song-info="kicker"]
+  {
+  font-family: $sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  color: var(--audio-meta-info-color);
+  display: block;
+}
+
+div.control-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 39.9375em) {
+  div.control-container div.amplitude-play-pause {
+    background-size: cover;
+    width: 64px;
+    height: 64px;
+  }
+  div.control-container div.meta-container {
+    width: calc(100% - 74px);
+  }
+}
+div.time-container {
+  opacity: 0.5;
+  font-family: $sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  color: var(--audio-meta-info-color);
+  height: 15px;
+}
+
+div.time-container span.current-time {
+  float: left;
+  margin-left: 5px;
+}
+
+div.time-container span.duration {
+  float: right;
+  margin-right: 5px;
+}
+
+progress.amplitude-song-played-progress {
+  background-color: var(--audio-progress-bg-color);
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  display: block;
+  cursor: pointer;
+  border: none;
+}
+
+progress.amplitude-song-played-progress:not([value]) {
+  background-color: var(--audio-progress-bg-color);
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: var(--audio-progress-bg-color);
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: var(--audio-progress-color);
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: var(--audio-progress-color);
+}
+
+div.bottom-container {
+  background-color: var(--audio-meta-info-bg-color);
+}
+
+div#single-song-player {
+  margin: auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  width: 100%;
+  /*max-width: 460px;*/
+  -webkit-font-smoothing: antialiased;
+}
+
+div#single-song-player img[data-amplitude-song-info="cover_art_url"] {
+  width: 100%;
+}
+
+a.learn-more {
+  display: block;
+  width: 300px;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  color: var(--audio-meta-info-color);
+  text-decoration: none;
+  background-color: var(--audio-meta-info-bg-color);
+  font-family: $sans-serif;
+  padding: 20px;
+  font-weight: 100;
+}

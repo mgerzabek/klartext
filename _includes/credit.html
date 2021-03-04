@@ -1,0 +1,20 @@
+{% assign image = include.data %}
+<div class="credit">
+  <img src="{{ image.path }}" alt="{{ image.alt }}">
+  <q>
+    Quelle: {{ image.source.text }}
+    <a href="{{ image.source.url }}">{% include icons/external-link.html %}</a>.
+    {% if image.license %}
+      <br>{{ image.license.text }}
+      <a href="{{ image.license.url }}">{% include icons/external-link.html %}</a>.
+    {% else %}
+      <br>Alle Rechte vorbehalten.
+    {% endif %}
+    {% if image.via %}
+      <br>via {{ image.via }}.
+    {% endif %}
+    {% unless image.display == social %}
+      <br>Bild wird zur Anzeige in sozialen Medien verwendet.
+    {% endunless %}
+  </q>
+</div>

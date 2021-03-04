@@ -1,0 +1,19 @@
+{% assign figure = site.data.figures | where: "key", include.id | first %}
+{% assign alt = include.alt | default: figure.alt | default: "" | strip_html %}
+{% assign source = include.source | default: figure.source.text | default: "" %}
+{% assign source_url = include.source_url | default: figure.source.url | default: "" %}
+{% assign via = include.via | default: figure.via.text | default: "" %}
+{% assign via_url = include.via_url | default: figure.via.url | default: "" %}
+{% assign license = include.license | default: figure.license.text | default: "" %}
+{% assign license_url = include.license_url | default: figure.license.url | default: "" %}
+<figure>
+  <header class="figure">
+    Quelle: {% if source_url != '' %}<a class="" href="{{ source_url }}" title="{{ source }}">{{ source }}</a>{% else %}{{ source }}{% endif %}
+    {% if via != '' %} via {% if via_url != '' %}<a class="" href="{{ via_url }}" title="{{ via }}">{{ via }}</a>{% else %}{{ via }}{% endif %}{% endif %},
+    {% if license_url != '' %}<a class="" href="{{ license_url }}" title="{{ license }}">{{ license }}</a>{% else %}{{ license }}{% endif %}.
+  </header>
+  <img src="{{ figure.path }}" alt="{{ alt }}">
+  <figcaption>
+    Bild: {{ alt }}
+  </figcaption>
+</figure>

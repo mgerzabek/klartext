@@ -1,0 +1,25 @@
+figure { 
+  font-family: $sans-serif;
+  margin: 1.75rem 0;
+  width: 100%;
+  
+  header.figure {
+    padding: 0 0.25rem 0.25rem;
+    font-size: 0.75rem;
+    color: var(--figure-header-color);
+    text-align: right
+  }
+  
+	figcaption {
+	  padding: 0.25rem;
+	  font-size: 0.875rem;
+	  color: var(--figure-figcaption-color)
+	}
+}
+@media (min-width: 1024px) {
+	
+	figure {
+	  max-width: 40rem;
+	  margin: 1.75rem auto;
+	}
+}

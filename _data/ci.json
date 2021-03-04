@@ -1,0 +1,16 @@
+{
+  "logos": {
+    "icon": {
+      "path": "/assets/storyfaktor.de_icon.svg",
+      "alt": "StoryFaktor® Logo icon"
+    },
+    "small": {
+      "path": "/assets/storyfaktor.de_small.svg",
+      "alt": "StoryFaktor® Logo small"
+    },
+    "full": {
+      "path": "/assets/img/survival.at_full.svg",
+      "alt": "Survival.at® Logo full"
+    }
+  }
+}

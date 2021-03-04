@@ -1,0 +1,20 @@
+{
+	"top": [
+		{
+			"href": "/page/",
+			"text": "Über"
+		},
+		{
+			"href": "/blog/",
+			"text": "Blog"
+		},
+		{
+			"href": "/contact/",
+			"text": "Kontakt"
+		}
+	],
+	"cta": {
+		"href": "/klartext/",
+		"text": "Starte hier!"
+	}
+}

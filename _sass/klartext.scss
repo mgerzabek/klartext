@@ -1,0 +1,40 @@
+
+/* ----------------------------------------------------------------------------
+ * (i) Variablen mit vernünftigen Grundeinstellungen einlesen.
+ * -------------------------------------------------------------------------- */
+
+@import "klartext/variables";
+@import "klartext/mixins";
+@import "klartext/utilities";
+
+/* ----------------------------------------------------------------------------
+ * (ii) Standard Farbschema setzen.
+ * -------------------------------------------------------------------------- */
+
+@import "klartext/color_scheme/default";
+
+/* ----------------------------------------------------------------------------
+ * (iii) Basisstile importieren.
+ * -------------------------------------------------------------------------- */
+@import "klartext/vendor/base";
+@import "klartext/vendor/screen-readers";
+
+@import "klartext/typography/block";
+@import "klartext/typography/inline";
+@import "klartext/typography/manual";
+
+@import "klartext/code/styles";
+@import "klartext/table/styles";
+@import "klartext/form/styles";
+
+/* ----------------------------------------------------------------------------
+ * (iv) Styles der Designelemente dazulesen. 
+ * -------------------------------------------------------------------------- */
+
+@import "klartext/element/styles";
+
+/* ----------------------------------------------------------------------------
+ * (v) Userstyles dazulesen. 
+ * -------------------------------------------------------------------------- */
+
+@import "klartext/custom/increments";

@@ -1,0 +1,55 @@
+# Der Titel der Website
+title: Der Titel der Website
+
+# Autor der Website
+author:
+  name: mgerzabek
+  email: me@michaelgerzabek.com
+  display: Michael Gerzabek
+
+# Die spitze Klammer erlaubt mehrzeilige Inhalte; 
+# damit endet der Feldwert für "description:" bei "locale:" 
+description: > 
+  Beschreibe hier deine neue Website. Du kannst diese Inhalte in _config.yml 
+  bearbeiten. Dieser Text wird im Dokumentkopf deiner Website angezeigt – damit
+  auch in den Google-Suchergebnisse und in der Seitebeschreibung in feed.xml.
+  
+since: 1968
+  
+# Was immer für dich passt…    
+locale: "de-AT"
+  
+# Wenn du Google Analytics verwendest, dann über den Google Tag Manager;
+# einfach die folgende Zeile auskommentieren und die Tag-Id angeben
+# gtm: 
+  
+# Customizing Werte für das Theme  
+elements: 
+  
+  # Wie der Formatstring aufgebaut ist, erfährst du in der Dokumentetion von
+  # Shopify;
+  # https://shopify.github.io/liquid/filters/date/ 
+  date_format: "%d. %B %y"
+  
+  # Links zu social media accounts in der Fußzeile mit display: true
+  # aktivieren und dann die entsprechenden Platformen mit dem Benutzernamen
+  # versehen und auskommentieren
+  social:
+    display: true
+    facebook: mgerzabek 
+    # flickr: 
+    github: mgerzabek  
+    instagram: mgerzabek 
+    linkedin: mgerzabek 
+    # pinterest:
+    # stackoverflow: 
+    # telegram: 
+    twitter: mgerzabek 
+    # youtube:
+    #   user:
+    #   channel:
+    #   name: 
+    
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
