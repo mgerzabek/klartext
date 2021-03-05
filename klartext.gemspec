@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata["plugin_type"] = "theme"
 
-  spec.files = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(_data/|_includes/|_layouts/|_sass/|assets/|_config|LICENSE|README)!i) }
+  spec.files = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(_data/|_includes/|_layouts/|_sass/|assets/|_config|LICENSE|README)((\.(css|html|js|json|md|scss|svg|txt|yml)|$)))!i) }
     
   spec.add_runtime_dependency "jekyll", "~> 4.2"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.9"
