@@ -1,4 +1,4 @@
-# Elements
+# Klartext
 
 Ein Jekyll Theme für EPUs, Brainworker (Berater, Trainer und Coaches), Content Marketer, Autoren, Wissenschafter und Schreibwütige.
 
