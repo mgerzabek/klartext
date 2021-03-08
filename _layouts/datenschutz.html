@@ -31,14 +31,14 @@
           {% include section.html section=texte.hinweis controls=datenschutz.hinweis %}
           {% if datenschutz.hinweis.stelle %}
             <p>
-              {{ site.data.impressum.betreiber.name }}<br>
-              {{ site.data.impressum.betreiber.adresse }}<br>
-              {{ site.data.impressum.betreiber.ort }}<br>
-              {{ site.data.impressum.betreiber.land }}
+              {{ page.betreiber.name }}<br>
+              {{ page.betreiber.adresse }}<br>
+              {{ page.betreiber.ort }}<br>
+              {{ page.betreiber.land }}
             </p>
             <p>
-              {{ site.data.impressum.betreiber.telefon }}<br>
-              {{ site.data.impressum.betreiber.email }}
+              {{ page.betreiber.telefon }}<br>
+              {{ page.betreiber.email }}
             </p>
           {% endif %}
         {% endif %}
