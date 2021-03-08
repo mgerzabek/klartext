@@ -12,15 +12,22 @@ footer {
 	    align-items: center;
 	    
 	    span {
-	      margin-left: .25rem;
+	      margin-left: .25rem
 	    }
+	    
 	    svg {
 	      fill: currentColor;
 	      color: var(--footer-icon-color);
-	      
+	      width: 1rem;
+        height: 1rem;
+
 	      &:hover {
-	        color: var(--footer-icon-color-hover);
+	        color: var(--footer-icon-color-hover)
 	      }
+	    }
+	    
+	    &:hover svg {
+	      color: var(--footer-icon-color-hover)
 	    }
 	  }  
 	}
