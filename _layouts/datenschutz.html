@@ -47,7 +47,7 @@
           {% include section.html section=texte.pflicht controls=datenschutz.pflicht %}
         {% endif %}
           
-        {% if datenschutz.beauftragter %}
+        {% if datenschutz.beauftragter.beauftragter %}
           {% include section.html section=texte.beauftragter controls=datenschutz.beauftragter %}
           <p>
             {{ page.beauftragter.name }}<br>
@@ -73,7 +73,7 @@
           {% include section.html section=texte.analytics controls=datenschutz.analytics %}
         {% endif %}
         
-        {% if datenschutz.newsletter or datenschutz.newsletter.mailchimp or datenschutz.newsletter.klick_tipp or datenschutz.newsletter.drip %}
+        {% if datenschutz.newsletter.allgemein or datenschutz.newsletter.klick_tipp %}
           {% include section.html section=texte.newsletter controls=datenschutz.newsletter %}
         {% endif %}
         
@@ -81,7 +81,7 @@
           {% include section.html section=texte.plugins controls=datenschutz.plugins %}
         {% endif %}
         
-        {% if datenschutz.partner_programms %}
+        {% if datenschutz.partner_programms.amazon %}
           {% include section.html section=texte.partner_programms controls=datenschutz.partner_programms %}
         {% endif %}
         
