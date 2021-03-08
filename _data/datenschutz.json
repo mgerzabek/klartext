@@ -4,6 +4,12 @@
   "preamble": {
     "label": ". Datenschutz auf einen Blick",
     "blocks": {
+      "ghpages": {
+        "label": "Allgemeine Hinweise",
+        "p": [
+          "Diese Seite erhebt keine personenbezogenen Daten. Es werden keine Logfiles geschrieben. Ferner verzichten wir auf jedwedes Usertracking. In deinem Browser werden keine Cookies gesetzt."
+        ]
+      },
       "allgemein": {
         "label": "Allgemeine Hinweise",
         "p": [

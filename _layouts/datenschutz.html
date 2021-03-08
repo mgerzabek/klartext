@@ -23,7 +23,7 @@
           </h1>
         </header>
         
-        {% if datenschutz.preamble.allgemein or datenschutz.preamble.website or datenschutz.preamble.tools %}
+        {% if datenschutz.preamble.allgemein or datenschutz.preamble.website or datenschutz.preamble.tools or datenschutz.preamble.ghpages %}
           {% include section.html section=texte.preamble controls=datenschutz.preamble %}
         {% endif %}
 
