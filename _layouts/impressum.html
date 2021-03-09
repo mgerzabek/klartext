@@ -8,7 +8,6 @@
     {% seo %}
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
     {% feed_meta %}
-    {% include gtm.html %}
     {% include custom-head.html %}
   </head>
   <body>
@@ -23,15 +22,15 @@
         <section>
           <h2>{{ impressum.betreiber.label }}</h2>
           <p>
-              {{ page.betreiber.name | escape }}<br>
-              {{ page.betreiber.adresse | escape }}<br>
-              {{ page.betreiber.ort | escape }}<br>
-              {{ page.betreiber.land | escape }}<br>
+              {{ site.betreiber.name | escape }}<br>
+              {{ site.betreiber.adresse | escape }}<br>
+              {{ site.betreiber.ort | escape }}<br>
+              {{ site.betreiber.land | escape }}<br>
           </p>
           <h3>{{ impressum.kontakt.label }}</h3>
           <p>
-             {{ page.betreiber.telefon | escape }}<br>
-             {{ page.betreiber.email | escape }}
+             {{ site.betreiber.telefon | escape }}<br>
+             {{ site.betreiber.email | escape }}
           </p>
           
           {% if impressum.streitschlichtung %}
@@ -100,7 +99,6 @@
       </article>
     </main>
     
-    {% include cookieconsent.html %}
     {% include custom-pre-closing-body.html %}
   </body>
 </html>

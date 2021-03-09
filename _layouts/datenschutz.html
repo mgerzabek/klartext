@@ -10,7 +10,6 @@
     {% seo %}
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
     {% feed_meta %}
-    {% include gtm.html %}
     {% include custom-head.html %}
   </head>
   <body>
@@ -31,14 +30,14 @@
           {% include section.html section=texte.hinweis controls=datenschutz.hinweis %}
           {% if datenschutz.hinweis.stelle %}
             <p>
-              {{ page.betreiber.name }}<br>
-              {{ page.betreiber.adresse }}<br>
-              {{ page.betreiber.ort }}<br>
-              {{ page.betreiber.land }}
+              {{ site.betreiber.name }}<br>
+              {{ site.betreiber.adresse }}<br>
+              {{ site.betreiber.ort }}<br>
+              {{ site.betreiber.land }}
             </p>
             <p>
-              {{ page.betreiber.telefon }}<br>
-              {{ page.betreiber.email }}
+              {{ site.betreiber.telefon }}<br>
+              {{ site.betreiber.email }}
             </p>
           {% endif %}
         {% endif %}
@@ -92,7 +91,6 @@
       </article>
     </main>
     
-    {% include cookieconsent.html %}
     {% include custom-pre-closing-body.html %}
   </body>
 </html>
