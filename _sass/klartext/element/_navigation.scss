@@ -1,19 +1,18 @@
-/*
 div.space-y {
 	padding-top: 4rem;
 }
-*/
 div#navigation { 
-	/*
-	position: fixed; 
-	width: 100%; 
-	z-index: 50;
-	*/
 	background-color: var(--nav-bg-color); 
 	border-color: var(--nav-border-color); 
 	border-bottom-width: 1px; 
+	box-shadow: inset 0 0 0 0px var(--white), inset 0 0 0 0px var(--white), 0 0 var(--black);
 	height: 4rem; 
-	
+
+  .fixed {
+	  position: fixed; 
+	  width: 100%; 
+	  z-index: 50;
+  }	
 	.navigation { 
     border-color: var(--nav-border-color); 
     border-bottom-width: 1px; 
