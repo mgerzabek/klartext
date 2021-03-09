@@ -3,8 +3,6 @@ div.space-y {
 }
 div#navigation { 
 	background-color: var(--nav-bg-color); 
-	border-color: var(--nav-border-color); 
-	border-bottom-width: 1px; 
 	height: 4rem; 
 
   &.fixed {
@@ -13,7 +11,7 @@ div#navigation {
 	  z-index: 50;
   }	
 	.navigation { 
-    border-color: var(--nav-cell-border-color); 
+    border-color: var(--nav-border-color); 
     border-bottom-width: 1px; 
     display: flex; 
     height: 4rem; 
