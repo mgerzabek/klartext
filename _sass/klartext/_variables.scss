@@ -121,7 +121,8 @@ $header-figure-bg-color               :   $white;
 
 /* element/navigation.scss -------------------------------------------------- */
 $nav-bg-color                         :   $white;
-$nav-border-color                     :   $white;
+$nav-border-color                     :   #e5e7eb !default;
+$nav-cell-border-color                :   $white;
 $nav-open-sidebar-color               :   rgba(107, 114, 128, 1) !default;
 $nav-open-sidebar-focus-color         :   rgba(16, 185, 129, 1) !default;
 $nav-top-link-active-bg-color         :   rgba(243, 244, 246, 1) !default;
