@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% seo %}
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+    {% if sidebar %}<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>{% endif %}
     {% feed_meta %}
     {% include custom-head.html %}
   </head>
@@ -15,7 +15,7 @@
 
     {{ content }}
       
-    {% include sidebar.html %}
+    {% if sidebar %}{% include sidebar.html %}{% endif %}
     {% include custom-pre-closing-body.html %}
   </body>
 </html>
