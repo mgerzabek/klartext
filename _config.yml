@@ -1,3 +1,31 @@
+#
+# Diese Konfigurationsdatei ist für Einstellungen gedacht, die sich auf dein
+# gesamtes Blog auswirken. Die Werte werden normalerweise einmal eingerichtet 
+# und danach nur noch selten verändert. 
+# Wenn du diese Datei sehr häufiger bearbeitest, solltest du die Datendateien-
+# funktion von Jekyll verwenden. Mehr dazu unter:
+# https://jekyllrb.com/docs/datafiles/
+#
+# Aus technischen Gründen wird diese Datei *NICHT* automatisch neu geladen, 
+# wenn du die lokale Vorschau mit `jekyll serve` oder `bundle exec jekyll serve`
+# verwendest. Wenn du diese Datei änderst, starte den Serverprozess neu.
+# 
+# Benötigst du Hilfe beim YAML-Syntax, benutze folgende Kurzreferenzen:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+################################################################################
+#
+# Seiten Variablen
+#
+################################################################################
+#
+# Seiten Variablen werden verwendet, um deine neue Site zu personalisieren. Wenn 
+# du in die HTML-Dateien schaust, kannst du sehen, dass du über {{site.title}}, 
+# {{site.email}} usw. darauf zugreifen kannst. Du kannst jede gewünschte 
+# benutzerdefinierte Variable erstellen, auf die du dann in deinen Vorlagen über 
+# {{site.myvariable}} zugreifen kannst.
+#
 # Der Titel der Website
 title: Der Titel der Website
 
@@ -53,3 +81,16 @@ klartext:
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
+
+# Von der Verarbeitung ausschließen.
+# Die folgenden Elemente werden standardmäßig nicht verarbeitet.
+# Alle Elemente, die hier unter der `exclude:` aufgeführt sind, werden 
+# automatisch zur internen Ausschlussliste hinzugefügt.
+# Ausgeschlossene Elemente können verarbeitet werden, indem die Verzeichnisse 
+# oder der Dateipfad ihrer Einträge explizit in `include:` aufgeführt werden.
+exclude:
+   - .sass-cache/
+   - .jekyll-cache/
+   - Gemfile
+   - Gemfile.lock
+   
