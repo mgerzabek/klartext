@@ -420,6 +420,28 @@
           "**Abschluss eines Vertrags über Auftragsdatenverarbeitung**",
           "Wir haben einen Vertrag über Auftragsdatenverarbeitung mit Klick-Tipp abgeschlossen, in dem wir Klick-Tipp verpflichten, die Daten unserer Kunden zu schützen und sie nicht an Dritte weiterzugeben."
         ]
+      },
+      "quentn": {
+        "label": "Quentn",
+        "p": [
+          "Diese Website nutzt die Dienste der Firma Quentn.com GmbH, Friedrich-Ebert-Straße 51, DE-14469 Potsdam zum Versand der Newsletter.",
+          "Quentn ist ein Dienst, mit dem u.a. der Versand von Newslettern organisiert und analysiert werden kann. Wenn Sie Daten zum Zwecke des Newsletterbezugs eingeben (z.B. E-Mail-Adresse), werden diese auf den Servern von Quentn in Deutschland gespeichert.",
+          "Deine bei der Newsletter Anmeldung gespeicherten Daten (E-Mail-Adresse, ggf. Name, IP-Adresse, Datum sowie die Uhrzeit deiner Anmeldung) werden an einen Server der Firma Quentn.com GmbH gesendet und dort gespeichert. ",
+          "Das Abonnement dieses Newsletters und damit die Einwilligung in die Speicherung deiner Daten kannst du jederzeit für die Zukunft kündigen bzw. widerrufen. Einzelheiten hierzu entnimm bitte der Bestätigungsmail sowie jedem einzelnen Newsletter.",
+          "**Newsletter-Tracking**",
+          "Unsere Newsletter enthalten sog. Zählpixel (Web-Bugs), anhand derer wir erkennen können, ob und wann eine E-Mail geöffnet wurde und welchen Links in der E-Mail von dem personalisierten Empfänger gefolgt wurde.",
+          "Diese Daten werden von uns gespeichert, damit wir unsere Newsletter optimal auf die Wünsche und Interessen unserer Abonnenten ausrichten können. Demnach werden die somit erhobenen Daten genutzt, um personalisierte Newsletter an den jeweiligen Empfänger zu versenden.",
+          "Um deine diesbezügliche Einwilligung bitten wir dich an gegebener Stelle wie folgt:",
+          "„Hinweis: Mit der Anmeldung zum Kurs wirst du in unseren Newsletter aufgenommen und erhälst in Zukunft wichtige Updates zum StoryFaktor®. Du kannst deine Einwilligung jederzeit widerrufen.“",
+          "Mit dem widerrufen der Einwilligung zum Erhalt des Newsletters, wird auch die Einwilligung zum vorgenannten Tracking widerrufen.",
+          ""
+        ]
+      },
+      "quentn_av": {
+        "p": [
+          "**Abschluss eines Auftragsverarbeitungs-Vertrag**",
+          "Wir haben mit Quentn einen Auftragsverarbeitungs-Vertrag abgeschlossen, in dem wir Quentn verpflichten, die Daten unserer Kunden zu schützen und sie nicht an Dritte weiterzugeben."
+        ]
       }
     }
   },
