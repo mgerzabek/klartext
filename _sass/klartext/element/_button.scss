@@ -20,8 +20,9 @@ span.button {
     box-shadow: inherit;
     border-color: transparent;
     font-weight: 500;
+    font-style: var(--button-text-style);
     background-color: var(--button-bg-color);
-    border-radius: 0.375rem;
+    border-radius: 0.25rem;
     text-decoration: underline;
     
     &:hover {
