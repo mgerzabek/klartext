@@ -1,13 +1,15 @@
 blockquote.testimonial {
 	position: relative;
-	padding-left: 5rem;
-	font-weight: 500;
-	
+  padding-left: 7rem; 
+  padding-top: .75rem;
+  	
 	img.avatar {
-	  display: block;
 	  position: absolute;
-	  border-radius: 100%;
-	  height: 4rem;
-	  width: 4rem;
+	  padding: .7%;
+		border-radius: 50%;
+		background: var(--testimonial-avatar-border-color);
+	  width: 6rem;
+	  top: .75rem;
+	  left: .75rem;
 	}
 }
