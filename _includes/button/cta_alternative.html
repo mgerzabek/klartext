@@ -1,13 +1,7 @@
-<p>
-  <span class="button">
-    <a href="{{ include.href }}">{{ include.text }}</a>
-  </span>
+<p class="cta">
+  <a class="button" href="{{ include.href }}">{{ include.text }}</a>
   <br>
-  <span class="alternative">
-    {{ include.alt_pre }}
-    <a class="no-break" href="{{ include.alt_href }}" rel="external">
-      {{ include.alt_text }}
-    </a>
-    {{ include.alt_post }}
+  <span>
+    {{ include.alt_pre }} <a class="no-break" href="{{ include.alt_href }}" rel="external">{{ include.alt_text }}</a> {{ include.alt_post }}
   </span>
 </p>
