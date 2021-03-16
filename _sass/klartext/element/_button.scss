@@ -37,9 +37,10 @@ p.cta {
 	  }
 	}
 	a.no-break {
-	  white-space: no-break;
+	  white-space: nowrap;
 	}  
 	span {
+	  display: block;
 	  font-size: .75rem;
 	  font-style: italic;
 	  color: var(--button-alt-color);
