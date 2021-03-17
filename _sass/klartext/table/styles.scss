@@ -43,4 +43,119 @@ table {
 	  max-width: 40rem;
 	  margin: 1.75rem auto
 	}
+	.lg {
+    display: inherit;   
+  }
+  .sm {
+    display: none;
+  } 
+}
+table.scedule {
+	max-width: 60rem;
+	border-collapse: initial;
+	border-spacing: 1px;
+  font-family: $sans-serif;
+  font-size: smaller;
+  hyphens: none;
+    
+  td {
+    text-align: center;
+    height: 4rem;
+    color: var(--scedule-color);
+    border: none;
+    
+    &.rahmen {
+      background-color: var(--scedule-rahmen-bg-color);
+    }
+    &.intro {
+      background-color: var(--scedule-intro-bg-color);
+    }
+    &.support {
+      background-color: var(--scedule-support-bg-color);
+    }
+    &.oss {
+      background-color: var(--scedule-oss-bg-color);
+    }
+    &.lecture {
+      background-color: var(--scedule-lecture-bg-color);
+    }
+    &.summary {
+      background-color: var(--scedule-summary-bg-color);
+    }
+    &.break {
+      background-color: var(--scedule-break-bg-color);
+      color: var(--scedule-break-color);
+    }
+  }
+  td:first-child {
+    border-top: 1px solid #333;
+    font-size: smaller;
+    vertical-align: top;
+    text-align: left;
+    color: #000;
+  }
+  tr:last-child > td:first-child {
+    border-top: none;
+  }
+  th {
+    width: 19%;
+  }
+  th:first-child {
+    width: 5%;
+    text-align: left;
+  }
+}
+
+table.underline {
+	border-collapse: inherit;
+  border-spacing: 0;
+  font-family: $sans-serif;
+  font-size: small;
+  hyphens: none;
+  margin: 1.5rem auto 3rem;
+  width: 100%;
+  max-width: 600px;
+    
+  td {
+    border: none;
+    vertical-align: top;
+    min-height: 2.5rem;
+    
+    div {
+      height: 2rem;
+      width: 2rem;
+      margin-top: .25rem;            
+    }
+    div.rahmen {
+      background-color: var(--scedule-rahmen-bg-color);
+    }
+    div.intro {
+      background-color: var(--scedule-intro-bg-color);
+    }
+    div.support {
+      background-color: var(--scedule-support-bg-color);
+    }
+    div.oss {
+      background-color: var(--scedule-oss-bg-color);
+    }
+    div.lecture {
+      background-color: var(--scedule-lecture-bg-color);
+    }
+    div.summary {
+      background-color: var(--scedule-summary-bg-color);
+    }
+    div.break {
+      background-color: var(--scedule-break-bg-color);
+    }
+    
+    & > strong {
+      font-weight: bold;
+    }
+  }
+  td:first-child {
+    width: 2rem;
+  }
+  td:last-child {
+    padding-left: .5rem;
+  }
 }
