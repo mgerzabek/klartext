@@ -35,6 +35,16 @@ article {
 	strong, 
 	.strong {
 	  font-weight: bolder;
+	  
+	  &.callout {
+	    display: table;
+	    background-color: var(--callout-bg-color);
+	    padding: .55rem;
+	    border-left: .25rem solid var(--callout-border-color);
+	    margin-left: -.25rem;
+	    margin-bottom: 2rem;
+	    width: 11rem;
+	  }
 	}
 	abbr {
 	  font-style: italic;
