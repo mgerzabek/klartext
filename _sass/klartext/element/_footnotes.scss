@@ -1,0 +1,32 @@
+div.footnotes {
+	max-width: 40rem;
+  margin: 0 auto;
+  font-family: $sans-serif;
+  font-size: smaller;
+  color: var(--footnotes-color);
+  
+  & > ol {
+    list-style: numeric;
+    
+    p {
+      padding: 0;
+    }
+  }
+  
+  &:before {
+    content: "__";
+  }
+}
+a[role=doc-backlink] {
+  box-shadow: initial;
+  border: none;
+  
+  &:hover {
+    color: var(--footnotes-hover-color)
+  }
+}
+@media (min-width: 1024px) {
+	div.footnotes {
+	  padding: 0 1rem 1rem
+	}
+}

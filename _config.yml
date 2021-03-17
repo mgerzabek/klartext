@@ -77,7 +77,15 @@ klartext:
     #   user:
     #   channel:
     #   name: 
-    
+
+## Kramdown settings
+kramdown:  
+  input: GFM
+  math_engine: mathjax
+  syntax_highlighter: rouge
+  footnote_backlink: ▲
+  parse_block_html: true
+      
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
