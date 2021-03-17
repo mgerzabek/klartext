@@ -8,3 +8,7 @@
 	bottom: 0px; 
 	left: 0px;
 }
+@mixin space-y {
+	margin-top: 1.75rem;
+	margin-bottom: 1.75rem;
+}

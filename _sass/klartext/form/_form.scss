@@ -8,8 +8,7 @@
 form {
   border-top: 1px solid var(--form-border-color);
   border-bottom: 1px solid var(--form-border-color);
-  margin-top: 1.75rem;
-  margin-bottom: 1.75rem;
+  @include space-y;
   padding-bottom: 2rem;
   width: 100%;
   opacity: 0;

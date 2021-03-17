@@ -1,0 +1,11 @@
+div.infobox {
+  background-color: var(--infobox-bg-color);
+  padding: 1.25rem;
+  @include space-y;
+  
+  .meta {
+    font-family: var(--infobox-meta-font-style);
+    font-size: smaller;
+    color: var(--infobox-meta-color)
+  }
+}

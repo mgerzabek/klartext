@@ -1,6 +1,5 @@
 p.cta {
-	margin-top: 1.75rem;
-  margin-bottom: 1.75rem;
+	@include space-y;
   
 	a.button {
 	  display: inline-flex;

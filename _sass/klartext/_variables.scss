@@ -43,7 +43,7 @@ $inline-code-bg-color                 :   #e2e8f0 !default;
 $em-weight                            :   500 !default;
 
 /* typography/manual.scss --------------------------------------------------- */
-$mark-color                           :   #ffeda6 !default;
+$mark-color                           :   $gray-200 !default; // #ffeda6
 
 /* code/styles.scss --------------------------------------------------------- */
 $code-border-color                    :   #e5e7eb !default;
@@ -120,6 +120,11 @@ $header-kicker-color                  :   $gray-500;
 $header-description-color             :   $gray-700;
 $header-meta-color                    :   $gray-500;
 $header-figure-bg-color               :   $white;
+
+/* element/header.scss ------------------------------------------------------ */
+$infobox-bg-color                     :   $gray-50; // #dfeffc
+$infobox-meta-font-style              :   $sans-serif;
+$infobox-meta-color                   :   $gray-400;
 
 /* element/navigation.scss -------------------------------------------------- */
 $nav-bg-color                         :   $white;
