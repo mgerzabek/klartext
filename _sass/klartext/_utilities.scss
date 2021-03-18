@@ -5,43 +5,53 @@
 	font-family: $serif
 }
 .fw-bolder {
-	font-weight: bolder;
+	font-weight: bolder
 }
 
 /* Backgrounds (use as mixin class) ----------------------------------------- */
 .bg-red {
-	background-color: var(--bg-red);
+	background-color: var(--bg-red)
 }   
 .bg-pink {
-  background-color: var(--bg-pink);
+  background-color: var(--bg-pink)
 }  
 .bg-purple {
-  background-color: var(--bg-purple);
+  background-color: var(--bg-purple)
 }
 .bg-indigo {
-  background-color: var(--bg-indigo);
+  background-color: var(--bg-indigo)
 }
 .bg-blue {
-  background-color: var(--bg-blue);
+  background-color: var(--bg-blue)
 }  
 .bg-cyan {
-  background-color: var(--bg-cyan);
+  background-color: var(--bg-cyan)
 }  
 .bg-teal{
-  background-color: var(--bg-teal);
+  background-color: var(--bg-teal)
 }  
 .bg-green{
-  background-color: var(--bg-green);
+  background-color: var(--bg-green)
 } 
 .bg-lime{
-  background-color: var(--bg-lime);
+  background-color: var(--bg-lime)
 }  
 .bg-yellow {
-  background-color: var(--bg-yellow);
+  background-color: var(--bg-yellow)
 }
 .bg-orange {
-  background-color: var(--bg-orange);
+  background-color: var(--bg-orange)
 }
 .bg-gray{
-  background-color: var(--bg-gray);
-}  
+  background-color: var(--bg-gray)
+}
+
+/* Orientierung Bilder im Fließtext ----------------------------------------- */
+.left {
+	float: left;
+	margin-right: 1rem
+}
+.right {
+	float: right;
+	margin-left: 1rem
+}
