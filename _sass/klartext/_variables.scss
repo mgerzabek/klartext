@@ -16,6 +16,22 @@ $gray-800                             :   #27303f !default;
 $gray-900                             :   #1a202e !default;    
 $border-color                         :   $white;
 
+/* Backgrounds --------------------------------------------------------------
+ | @see https://www.w3schools.com/w3css/w3css_color_themes.asp
+ +--------------------------------------------------------------------------- */
+$bg-red                               :   #fef4f3 !important;
+$bg-pink                              :   #fef2f6 !important;
+$bg-purple                            :   #faf0fc !important;
+$bg-indigo                            :   #f3f4fb !important;
+$bg-blue                              :   #f2f9fe !important;
+$bg-cyan                              :   #edfdff !important;
+$bg-teal                              :   #e9fffd !important;
+$bg-green                             :   #f4faf4 !important;
+$bg-lime                              :   #fcfdf3 !important;
+$bg-yellow                            :   #fffef3 !important;
+$bg-orange                            :   #fff5f2 !important;
+$bg-gray                              :   $gray-50;
+
 /* Fonts -------------------------------------------------------------------- */
 $serif                                :   'Merriweather', 'Apple Garamond', Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $sans-serif                           :   -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
