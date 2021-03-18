@@ -49,6 +49,13 @@ article {
 	abbr {
 	  font-style: italic;
 	}
+	img.avatar {
+	  width: auto;
+	  height: 150px;
+    padding: .7%;
+    border-radius: 50%;
+    background: #fff;
+	}
 }
 /* code @see _block.scss p */
 /* img @see ../element/_figure.scss */
