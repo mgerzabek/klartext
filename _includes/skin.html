@@ -1,0 +1,22 @@
+<script>
+	var request = new XMLHttpRequest();
+	
+	request.open('GET', '{{ site.skin | prepend: "assets/skin/" | append: ".json" | absolute_url }}', true);
+
+	request.onload = function() {
+		if (request.status >= 200 && request.status < 400) {
+			var styles = JSON.parse(request.responseText);
+			Object.entries(styles).forEach(([key, value]) => {
+				document.documentElement.style.setProperty(key, value);
+			})
+		} else {
+			console.log('Skin konnte nicht geladen werden. Status der Anfrage:' + request.status);
+		}
+	};
+
+	request.onerror = function() {
+		console.log('Verbindung zum Server fehlgeschlagen');
+	};
+
+	request.send();
+</script>
