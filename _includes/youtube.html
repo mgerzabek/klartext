@@ -8,16 +8,16 @@
 {% assign license = include.license | default: video.license.text | default: "" %}
 {% assign license_url = include.license_url | default: video.license.url | default: "" %}
 <div class="youtube">
-  <p class="video-header">
-    Quelle: {% if source_url != '' %}<a class="" href="{{ source_url }}" title="{{ source }}">{{ source }}</a>{% else %}{{ source }}{% endif %} &middot;
-    {% if license_url != '' %}<a class="" href="{{ license_url }}" title="{{ license }}">{{ license }}</a>{% else %}{{ license }}{% endif %}.
-  </p>
-  <div class="video-wrapper video-wrapper-{{ aspect_ratio }}"> 
-    <iframe src="https://www.youtube.com/embed/{{ video.key }}?rel=0&showinfo=0&wmode=transparent&modestbranding=0" allowfullscreen="" frameborder="0" height="315" width="560"></iframe>
-  </div>
-  <h4 class="video-title">{{ title }}</h4>
-  <p class="video-kicker">{{ kicker }}</p>
-  <p class="video-description">
-    {{ description }}
-  </p>
+<p class="video-header">
+  Quelle: {% if source_url != '' %}<a class="" href="{{ source_url }}" title="{{ source }}">{{ source }}</a>{% else %}{{ source }}{% endif %} &middot;
+  {% if license_url != '' %}<a class="" href="{{ license_url }}" title="{{ license }}">{{ license }}</a>{% else %}{{ license }}{% endif %}.
+</p>
+<div class="video-wrapper video-wrapper-{{ aspect_ratio }}"> 
+  <iframe src="https://www.youtube.com/embed/{{ video.key }}?rel=0&showinfo=0&wmode=transparent&modestbranding=0" allowfullscreen="" frameborder="0" height="315" width="560"></iframe>
+</div>
+<h4 class="video-title">{{ title }}</h4>
+<p class="video-kicker">{{ kicker }}</p>
+<p class="video-description">
+  {{ description }}
+</p>
 </div>
