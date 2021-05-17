@@ -59,3 +59,10 @@ div.youtube {
 	  padding-bottom: 75%;
 	}
 }
+
+@media (min-width: 1024px) {
+  
+  div.youtube {
+    max-width: 40rem;
+  } 
+}
