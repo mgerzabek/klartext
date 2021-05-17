@@ -1,9 +1,9 @@
-p, h1, h2, h3, h4, dl, ol, ul, blockquote {
+p, h1, h2, h3, h4, dl, ol, ul, blockquote, .default-w {
   max-width: 40rem;
   margin: 0 auto;
 }
 @media (min-width: 1024px) {
-	p, h1, h2, h3, h4, dl, ol, ul, blockquote {
+	p, h1, h2, h3, h4, dl, ol, ul, blockquote, .default-w {
 	  padding: 0 1rem 1rem
 	}	
 }
