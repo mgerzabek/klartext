@@ -1,0 +1,21 @@
+---
+layout: landing
+---
+{% include navigation.html %}
+    
+<main role="main" aria-label="Content">
+  
+  <article id="Story">
+    <div class="youtube w-2/3">
+      <div class="video-wrapper video-wrapper-16by9"> 
+        <iframe src="https://www.youtube.com/embed/{{ page.video }}?rel=0&showinfo=0&wmode=transparent&modestbranding=0" allowfullscreen="" frameborder="0" height="315" width="560"></iframe>
+      </div>
+    </div>
+    {% include header.html %}
+      
+    {{ content }}
+  </article>
+
+</main>
+  
+{% include footer.html %}

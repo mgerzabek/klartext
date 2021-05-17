@@ -1,8 +1,10 @@
 div.youtube {
 	width: 100%;
-	margin: 1.75rem 0;
 	font-family: $sans-serif;
 	
+	& > .margin {
+	  margin: 1.75rem 0;
+	}
 	p.video-header {
 	  margin: 0;
 	  max-width: inherit;
@@ -62,8 +64,7 @@ div.youtube {
 }
 @media (min-width: 1024px) {
 	
-	div.youtube {
-	  max-width: 40rem;
-	  margin: 1.74rem auto;
-	} 
+	div.youtube > .margin {
+	  margin: 1.75rem auto;
+	}
 }

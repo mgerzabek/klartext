@@ -7,7 +7,7 @@
 {% assign source_url = include.source_url | default: video.source.url | default: "" %}
 {% assign license = include.license | default: video.license.text | default: "" %}
 {% assign license_url = include.license_url | default: video.license.url | default: "" %}
-<div class="youtube">
+<div class="youtube margin">
 <p class="video-header">
   Quelle: {% if source_url != '' %}<a class="" href="{{ source_url }}" title="{{ source }}">{{ source }}</a>{% else %}{{ source }}{% endif %} &middot;
   {% if license_url != '' %}<a class="" href="{{ license_url }}" title="{{ license }}">{{ license }}</a>{% else %}{{ license }}{% endif %}.
@@ -21,3 +21,4 @@
   {{ description }}
 </p>
 </div>
+<!-- Die Tags sind absichtlich nicht eingerückt! -->
