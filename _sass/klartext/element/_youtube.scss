@@ -2,7 +2,7 @@ div.youtube {
 	width: 100%;
 	font-family: $sans-serif;
 	
-	& > .margin {
+	&.margin {
 	  margin: 1.75rem 0;
 	}
 	p.video-header {
@@ -64,7 +64,7 @@ div.youtube {
 }
 @media (min-width: 1024px) {
 	
-	div.youtube > .margin {
+	div.youtube.margin {
 	  margin: 1.75rem auto;
 	}
 }
