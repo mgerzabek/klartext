@@ -1,5 +1,4 @@
 div.youtube {
-	width: 100%;
 	font-family: $sans-serif;
 	
 	p.video-header {
@@ -58,11 +57,4 @@ div.youtube {
 	.video-wrapper-4by3 {
 	  padding-bottom: 75%;
 	}
-}
-
-@media (min-width: 1024px) {
-  
-  div.youtube {
-    max-width: 40rem;
-  } 
 }
