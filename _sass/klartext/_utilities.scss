@@ -59,3 +59,12 @@
 	max-width: 56rem;
 	margin: 0 auto 1.75rem;
 }
+.m-bt {
+	margin: 1.75rem 0;
+}
+@media (min-width: 1024px) {
+  
+  .m-bt {
+    margin: 1.75rem auto;
+  }
+}

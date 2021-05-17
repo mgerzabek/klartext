@@ -2,9 +2,6 @@ div.youtube {
 	width: 100%;
 	font-family: $sans-serif;
 	
-	& .margin {
-	  margin: 1.75rem 0;
-	}
 	p.video-header {
 	  margin: 0;
 	  max-width: inherit;
@@ -60,11 +57,5 @@ div.youtube {
 	/* Modifier class for 4:3 aspect ratio */
 	.video-wrapper-4by3 {
 	  padding-bottom: 75%;
-	}
-}
-@media (min-width: 1024px) {
-	
-	div.youtube .margin {
-	  margin: 1.75rem auto;
 	}
 }
