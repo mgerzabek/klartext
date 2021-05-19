@@ -1,4 +1,4 @@
-<header>
+<header{% if include.class %} class="{{ include.class }}"{% endif %}>
   <h1>
     <!-- Titel -->
     {{ page.title | escape }}

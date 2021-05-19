@@ -1,4 +1,10 @@
 header {
+
+	&.video {
+	  padding-top: 1.75rem;
+	  border-color: var(--nav-border-color);
+	  border-top-width: 1px;
+	}
 	h1 {
 	  font-size: 2rem;
 	  font-weight: 900;
