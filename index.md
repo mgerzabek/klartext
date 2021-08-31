@@ -1,5 +1,5 @@
 ---
-layout: video
+layout: page
 title: Revolutioniere dein Marketing
 description: <i>Story</i>Faktor<sup>®</sup> ist ein einfaches Framework, das dir dabei hilft, deine Marketingbotschaften auf den Punkt zu bringen.
 video: cgJue9LKtdc

@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["michael.gerzabek@gmail.com"]
 
   spec.summary       = "Ein Jekyll Theme für EPUs, Brainworker (Berater, Trainer und Coaches), Content Marketer, Autoren, Wissenschafter und Schreibwütige."
-  spec.homepage      = "https://github.com/storyfaktor/klartext"
+  spec.homepage      = "https://github.com/mgerzabek/klartext"
   spec.license       = "MIT"
 
   spec.metadata["plugin_type"] = "theme"

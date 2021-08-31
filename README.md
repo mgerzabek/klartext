@@ -4,11 +4,11 @@ Ein Jekyll Theme für EPUs, Brainworker (Berater, Trainer und Coaches), Content 
 
 ## Installation
 
-Benutze folgende [Vorlage](https://github.com/storyfaktor/starter) und starte in wenigen Minuten mit deiner eigenen Website. Ein Klick auf `Use this template` genügt und schon kann es los gehen.
+Benutze folgende [Vorlage](https://github.com/mgerzabek/starter) und starte in wenigen Minuten mit deiner eigenen Website. Ein Klick auf `Use this template` genügt und schon kann es los gehen.
 
 ## Dokumentation
 
-Eine ausführliche und durchsuchbare Dokumentation des Themes findest du auf unser [Website](https://storyfaktor.de/klartext/)
+Eine ausführliche und durchsuchbare Dokumentation des Themes findest du auf unser [Website](https://michaelgerzabek.com/klartext/)
 
 ## Sicherheit
 
