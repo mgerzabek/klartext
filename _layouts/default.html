@@ -1,14 +1,22 @@
----
-layout: landing
----
-{% include navigation.html %}
-    
-<header class="ci">
-  <h2><img src="{{ site.data.ci.logos.icon.path }}" alt="{{ site.data.ci.logos.icon.alt }}"></h2>
-</header>
-  
-<main role="main" aria-label="Content">
-  {{ content }}
-</main>
-  
-{% include footer.html %}
+{% assign sidebar = site.data.navigation.sidebar | default: false %}
+<!DOCTYPE html>
+<html lang="{{ page.locale | default: site.locale | slice: 0,2  | default: 'de' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+    {% if sidebar %}<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>{% endif %}
+    {% feed_meta %}
+    {% include custom-head.html %}
+  </head>
+  <body{% if sidebar %} x-data="{ sidebarOpen: false }" x-on:keydown.window.escape="sidebarOpen = false"{% endif %}>
+
+    {{ content }}
+      
+    {% if sidebar %}{% include sidebar.html %}{% endif %}
+    {% if site.skin %}{% include skin.html %}{% endif%}
+    {% include custom-pre-closing-body.html %}
+  </body>
+</html>

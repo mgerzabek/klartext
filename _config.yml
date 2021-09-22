@@ -99,6 +99,6 @@ plugins:
 exclude:
    - .sass-cache/
    - .jekyll-cache/
+   - .idea/
    - Gemfile
    - Gemfile.lock
-   

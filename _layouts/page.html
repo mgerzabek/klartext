@@ -1,17 +1,27 @@
 ---
 layout: default
 ---
-<article class="" id="Story">
-  <!-- 
-    -- bedingt Inhaltsverzeichnis „Auf dieser Seite“ einfügen; 
-    -- Schalter toc {boolean}
-  -->
-  {% include header.html %}
-    
-  {{ content }}
-  <!-- 
-    -- Fußnoten
-    -- weiterführende Links
-    -- mehr zum Thema 
-  -->
-</article>
+{% include navigation.html %}
+
+<header class="ci">
+  <h2><img src="{{ site.data.ci.logos.icon.path }}" alt="{{ site.data.ci.logos.icon.alt }}"></h2>
+</header>
+
+<main role="main" aria-label="Content">
+  <article class="" id="Story">
+    <!--
+      -- bedingt Inhaltsverzeichnis „Auf dieser Seite“ einfügen;
+      -- Schalter toc {boolean}
+    -->
+    {% include header.html %}
+
+    {{ content }}
+    <!--
+      -- Fußnoten
+      -- weiterführende Links
+      -- mehr zum Thema
+    -->
+  </article>
+</main>
+
+{% include footer.html %}

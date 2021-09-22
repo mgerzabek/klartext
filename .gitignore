@@ -1,6 +1,10 @@
 # Eclipse Project Metadatei
 .project
 
+# IntelliJ
+*.iml
+.idea
+
 # Dateien die von Jekyll generiert werden
 _site/
 .sass-cache/

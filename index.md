@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Revolutioniere dein Marketing
-description: <i>Story</i>Faktor<sup>®</sup> ist ein einfaches Framework, das dir dabei hilft, deine Marketingbotschaften auf den Punkt zu bringen.
+title: Nervt dich WordPress?
+kicker: High-End IT-Services für Beratungsboutiquen
+description: Seit einem Jahrzehnt wird die Formel »Werde Reich mit einem Onlinebusiness« durch die unendlichen Weiten des Internets gejagt und dabei unhinterfragt WordPress als technologische Business-Plattform empfohlen. Das mit Erfolg.
 video: cgJue9LKtdc
 ---
 
