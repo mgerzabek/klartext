@@ -1,4 +1,5 @@
 header {
+	margin-top: 1rem;
 
 	&.video {
 	  padding-top: 1.75rem;
@@ -6,18 +7,25 @@ header {
 	  border-top-width: 1px;
 	}
 	h1 {
-	  font-size: 2rem;
+	  font-size: 3rem;
 	  font-weight: 900;
 	  line-height: 1.5;
-	  text-align: center;
-	  
+	  text-align: left;
+
+
 	  span {
-	    display: block;
 	    display: block;
 	    font-family: $sans-serif;
 	    font-weight: 400;
 	    font-size: .9rem;
 	    color: var(--header-kicker-color);
+
+			img {
+				float: left;
+				width: .9rem;
+				height: auto;
+				margin: .25rem .25rem .25rem 0;
+			}
 	  }	
 	}
 	h2 {
@@ -48,10 +56,9 @@ header {
 	p.teazer {
 	  font-family: $serif;
 	  color: var(--header-description-color); 
-	  padding: 0 0 .5em 0;
 	  font-style: italic;
 	  font-size: larger;
-	  text-align: center;
+	  text-align: left;
 	  
 	  em {
 	    font-style: italic; 
