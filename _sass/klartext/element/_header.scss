@@ -30,7 +30,7 @@ header {
 	}
 	h2 {
 		display: flex;
-		justify-content: center;
+		justify-content: left;
 		
 		img {
 		  width: 1.5rem;
@@ -71,7 +71,7 @@ header {
 	p.meta {
 	  color: var(--header-meta-color);
 	  font-size: smaller;
-	  text-align: center;
+	  text-align: left;
 	}
 }
 @media (min-width: 1024px) {
