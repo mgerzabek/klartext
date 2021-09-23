@@ -1,7 +1,7 @@
 <header{% if include.class %} class="{{ include.class }}"{% endif %}>
   <h1>
     <!-- Titel -->
-    {{ page.title | escape }}
+    {{ page.title }}
     <!-- Kicker -->
 
     <span><img src="{{ site.data.ci.logos.icon.path }}" alt="{{ site.data.ci.logos.icon.alt }}">{{ page.kicker | escape }}</span>
