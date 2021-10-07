@@ -98,11 +98,17 @@ table.scedule {
     width: 5%;
     text-align: left;
   }
+  .lg {
+     display: none;   
+   }
+   .sm {
+     display: table;
+   }
 }
 @media (min-width: 1024px) {
 	table.scedule {
     .lg {
-      display: inherit;   
+      display: table;   
     }
     .sm {
       display: none;
