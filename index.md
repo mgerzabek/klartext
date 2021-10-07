@@ -6,6 +6,24 @@ description: Seit einem Jahrzehnt wird die Formel »Werde Reich mit einem Online
 video: cgJue9LKtdc
 ---
 
+<div class="infobox">
+  
+  <h2><abbr title="Akronym für »too long, didn’t read«">TL;DR</abbr> – Das Angebot</h2>
+  
+  <p>Das <em class="key">Bootcamp</em> <em>In 2,5 Tagen zur eigenen Homepage</em> (H25d) ist eine Webinarserie, die sich über 5 Tage á 4+1 Stunden erstreckt.</p>
+  
+  <p>Sie erhalten eine Einführung in die Prozesse <em>Content Creation</em> und <em>Content Management</em> und lernen die wesentlichen <em>SEO</em> Standards kennen.</p>
+  
+  <p>Sie installieren und verwenden einschlägige Entwicklertools. Die Werkzeuge sind <em>Open Source Software</em> und können kostenlos verwendet werden. (<i>free forever</i>…)</p>
+  
+  <p>Der <em>Know-How</em>-Transfer verschafft ihnen einen klaren Blick auf die Anforderungen an ein <em>Content Management System</em> und <mark>definiert ihren Blick auf die Schnittstelle <em class="key">Mensch–Computer</em> neu</mark>.</p>
+  
+  <p>Ergebnis dieses wohldurchdachten Lernprozesses ist das Setup für ihr individuelles Webprojekt. Dieses kann <em>jederzeit auf Knopfdruck publiziert</em> werden und bildet die Basis für zukünftige Versionen ihrer Website.</p>
+  
+  <p class="meta">Die im Workshop erarbeitete Website kann auf Wunsch auf einer eigenen Domain gehostet werden. In diesem Fall ist die [Registrierung einer Domain vorab] und der Zugang zur [DNS Administration] beim Registrar im Webinar erforderlich. Ich helfe ihnen gerne weiter…</p>
+
+</div>
+
 ## Seminarleitung
 
 _Michael Gerzabek_{:.key} beschäftigt sich seit 1986 einschlägig mit dem Computer. Im Jahr 2000 ist er ins Internet eingestiegen – hat für große Konzerne [SAP]-Prozesse ans World-Wide-Web angebunden. Er sagt oft selbst, er wüsste gar nicht mehr so genau, was er noch alles weiß. 
