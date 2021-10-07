@@ -41,13 +41,7 @@ table {
 @media (min-width: 1024px) {
 	table {
 	  max-width: 40rem;
-	  margin: 1.75rem auto;
-	  .lg {
-	    display: inherit;   
-	  }
-	  .sm {
-	    display: none;
-	  }
+	  margin: 1.75rem auto
 	}
 }
 table.scedule {
@@ -105,7 +99,16 @@ table.scedule {
     text-align: left;
   }
 }
-
+@media (min-width: 1024px) {
+	table.scedule {
+    .lg {
+      display: inherit;   
+    }
+    .sm {
+      display: none;
+    }
+  }
+}
 table.underline {
 	border-collapse: inherit;
   border-spacing: 0;
