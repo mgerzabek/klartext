@@ -37,6 +37,12 @@ table {
 	td {
 	  vertical-align: center
 	}
+	.sm {
+	  display: table
+	}
+	.lg {
+	  display: none
+	}
 }
 @media (min-width: 1024px) {
 	table {
@@ -44,10 +50,10 @@ table {
 	  margin: 1.75rem auto
 	}
 	.lg {
-    display: inherit;   
+    display: table   
   }
   .sm {
-    display: none;
+    display: none
   } 
 }
 table.scedule {
@@ -93,9 +99,6 @@ table.scedule {
     vertical-align: top;
     text-align: left;
     color: #000;
-  }
-  tr:last-child > td:first-child {
-    border-top: none;
   }
   th {
     width: 19%;
