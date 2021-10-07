@@ -4,7 +4,7 @@
     {{ page.title }}
     <!-- Kicker -->
 
-    <span><img src="{{ site.data.ci.logos.icon.path }}" alt="{{ site.data.ci.logos.icon.alt }}">{{ page.kicker | escape }}</span>
+    <span><img src="{{ site.data.ci.logos.icon.path }}" alt="{{ site.data.ci.logos.icon.alt }}">{{ page.kicker | markdownify }}</span>
   </h1>
   
   <!-- Header Image -->
@@ -19,7 +19,7 @@
   <!-- Lead (Description) -->
   {% if page.description %}
     <p class="teazer">
-      {{ page.description }}
+      {{ page.description | markdownify }}
     </p>
   {% endif %}
   <!-- Meta (Geschrieben, letzer Update, social buttons) -->
