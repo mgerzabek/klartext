@@ -4,7 +4,7 @@
     {{ page.title }}
     <!-- Kicker -->
 
-    <span><img src="{{ site.data.ci.logos.icon.path }}" alt="{{ site.data.ci.logos.icon.alt }}">{{ page.kicker | markdownify }}</span>
+    <span><img src="{{ site.data.ci.logos.icon.path }}" alt="{{ site.data.ci.logos.icon.alt }}">{{ page.kicker | markdownify | remove: '<p>' | remove: '</p>' }}</span>
   </h1>
   
   <!-- Header Image -->
@@ -19,7 +19,7 @@
   <!-- Lead (Description) -->
   {% if page.description %}
     <p class="teazer">
-      {{ page.description | markdownify }}
+      {{ page.description | markdownify | remove: '<p>' | remove: '</p>' }}
     </p>
   {% endif %}
   <!-- Meta (Geschrieben, letzer Update, social buttons) -->
