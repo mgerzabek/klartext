@@ -42,7 +42,13 @@ p.cta {
 	  display: block;
 	  font-size: .75rem;
 	  font-style: italic;
-		width: 50%;
 	  color: var(--button-alt-color);
+	}
+}
+@media (min-width: 1024px) {
+	p.cta {
+	  span {
+	    width: 50%
+	  }
 	}
 }
