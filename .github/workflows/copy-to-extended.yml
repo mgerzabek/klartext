@@ -61,14 +61,7 @@ jobs:
           cp  ./_site/assets/style.css ./extended/assets/klartext.css
           cp  ./_site/assets/style.css.map ./extended/assets/klartext.css.map
           
-      - name: Commit changes
-        if: ${{ git status --porcelain }}
+      - name: Commit changes (if any…)
         run: |
-          cd klartext
-          MESSAGE="$(git log -1 --pretty=%B)"
-          cd ../extended
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit -m "klartext: $MESSAGE"
-          git push
+          chmod +x ./klartext/.github/cc.sh
+          ./klartext/.github/cc.sh
