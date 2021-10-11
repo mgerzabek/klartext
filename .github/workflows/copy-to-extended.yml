@@ -1,0 +1,39 @@
+name: Copy mgerzabek/klartext theme folders to pragmaticag/extended
+
+on:
+  push:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    
+    steps:
+    
+    - name: Checkout mgerzabek/klartext
+      uses: actions/checkout@v2
+      with:
+        path: klartext
+    
+    - name: Checkout pragmaticag/extended
+      uses: actions/checkout@v2
+      with:
+        repository: mgerzabek/extended
+        token: ${{ secrets.KLARTEXT_PAT }}
+        path: extended
+    
+    - name: Copy files
+      run: |
+        cp -rfu ./klartext/_data ./extended/_data
+        cp -rfu ./klartext/_includes ./extended/_includes
+        cp -rfu ./klartext/_layouts ./extended/_layouts
+        cp -rfu ./klartext/_sass ./extended/_sass
+        cd klartext
+        MESSAGE="$(git log -1 --pretty=%B)"
+        cd ../extended
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git commit -m "klartext: $MESSAGE" -a
+        git push
