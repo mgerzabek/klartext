@@ -1,10 +1,12 @@
-em {
-	&.key {
-	  font-variant: small-caps;
-	  font-style: normal;
-	  font-weight: inherit;
+article { 
+	em {
+		&.key {
+			font-variant: small-caps;
+			font-style: normal;
+			font-weight: inherit;
+		}
 	}
-}
-em[lang] {
-  font-weight: 300;
+	em[lang] {
+		font-weight: 300;
+	}
 }
