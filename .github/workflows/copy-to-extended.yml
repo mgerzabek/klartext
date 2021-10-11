@@ -27,7 +27,11 @@ jobs:
         with:
           enable_cache: true
           jekyll_src: klartext
-          
+      
+      - name: List all files
+        run: |
+          ls -R
+              
       - name: Checkout pragmaticag/extended
         uses: actions/checkout@v2
         with:
