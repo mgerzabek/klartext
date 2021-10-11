@@ -33,7 +33,7 @@ jobs:
         uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true
-          jekyll_src: klartext
+          jekyll_src: ./klartext
           
       - name: Copy files
         run: |
