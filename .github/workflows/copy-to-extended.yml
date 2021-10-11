@@ -63,7 +63,7 @@ jobs:
           
       - name: Commit changes
         run: |
-          if [[ !`git status --porcelain` ]]; then exit 0 fi    
+          if ![[ `git status --porcelain` ]]; then exit 0 fi    
           cd klartext
           MESSAGE="$(git log -1 --pretty=%B)"
           cd ../extended
