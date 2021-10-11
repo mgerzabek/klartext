@@ -22,7 +22,7 @@ jobs:
         with:
           ruby-version: 2.7
   
-      - name: install dependencies & build site
+      - name: Install dependencies & build site
         uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true
