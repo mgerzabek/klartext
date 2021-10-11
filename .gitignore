@@ -13,7 +13,6 @@ _site/
 
 # Dateien die vom Bundler generiert werden
 .bundle/
-Gemfile.lock
 
 # Gems
 *.gem
