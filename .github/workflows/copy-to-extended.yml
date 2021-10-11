@@ -60,6 +60,10 @@ jobs:
           cp -u ./klartext/_layouts/video.html ./extended/_layouts/video.html
           cp  ./_site/assets/style.css ./extended/assets/klartext.css
           cp  ./_site/assets/style.css.map ./extended/assets/klartext.css.map
+          
+      - name: Commit changes
+        run: |
+          if [[ !`git status --porcelain` ]]; then exit 0 fi    
           cd klartext
           MESSAGE="$(git log -1 --pretty=%B)"
           cd ../extended
