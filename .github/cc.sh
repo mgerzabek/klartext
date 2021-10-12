@@ -11,6 +11,7 @@ cp -u ./klartext/_includes/datum.html ./extended/_includes/datum.html
 cp -u ./klartext/_includes/figure.html ./extended/_includes/figure.html
 cp -u ./klartext/_includes/footer.html ./extended/_includes/footer.html
 cp -u ./klartext/_includes/header.html ./extended/_includes/header.html
+cp -u ./klartext/_includes/navigation.html ./extended/_includes/navigation.html
 cp -u ./klartext/_includes/sidebar.html ./extended/_includes/sidebar.html
 cp -u ./klartext/_includes/skin.html ./extended/_includes/skin.html
 cp -u ./klartext/_includes/social.html ./extended/_includes/social.html
