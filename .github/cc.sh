@@ -1,3 +1,7 @@
+#!/bin/bash
+#
+ls -la
+#
 cp -u ./klartext/_includes/button/cta.html ./extended/_includes/button/cta.html
 cp -u ./klartext/_includes/button/cta.w.alt.text.html ./extended/_includes/button/cta.w.alt.text.html
 cp -u ./klartext/_includes/icons/external-link.html ./extended/_includes/icons/external-link.html
