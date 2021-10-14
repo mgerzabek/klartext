@@ -20,7 +20,7 @@ jobs:
       - name: Checkout pragmaticag/extended
         uses: actions/checkout@v2
         with:
-          repository: mgerzabek/extended
+          repository: pragmaticag/extended
           token: ${{ secrets.KLARTEXT_PAT }}
           path: extended
           
