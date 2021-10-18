@@ -1,4 +1,4 @@
-figure { 
+article figure { 
   font-family: $sans-serif;
   margin: 1.75rem 0;
   width: 100%;
@@ -18,7 +18,7 @@ figure {
 }
 @media (min-width: 1024px) {
 	
-	figure {
+	article figure {
 	  max-width: 40rem;
 	  margin: 1.75rem auto;
 	}

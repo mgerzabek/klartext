@@ -1,21 +1,23 @@
-<footer>
-  <p>
-    <a href="/">Home</a>
-    / <a href="/rechtliches/impressum/">Impressum</a>
-    / <a href="/rechtliches/datenschutz/">Datenschutz und DSGVO</a>
-    <br>
-    (Beachte: <span class="fw-bolder">Diese Seite verwendet keine Cookies.</span>)
-  </p>
-  <p>
-    <a class="feed-subscribe" href="{{ 'feed.xml' | relative_url }}">
-      <svg>
-        <use xlink:href="{{ 'assets/social-icons.svg#rss' | relative_url }}"></use>
-      </svg><span>RSS Feed abonnieren</span>
-    </a>
-  </p>
-  {% include social.html %}
-  <p>{{ site.description | escape }}</p>
-  <p>
-    &copy; {{ site.since }}–{{ site.time | date: '%Y' }} {{ site.author.display | escape }}
-  </p>
+<footer class="site-info">
+  <div class="default-w">
+    <p>
+      <a href="/">Home</a>
+      / <a href="/rechtliches/impressum/">Impressum</a>
+      / <a href="/rechtliches/datenschutz/">Datenschutz und DSGVO</a>
+      <br>
+      (Beachte: <span class="fw-bolder">Diese Seite verwendet keine Cookies.</span>)
+    </p>
+    <p>
+      <a class="feed-subscribe" href="{{ 'feed.xml' | relative_url }}">
+        <svg>
+          <use xlink:href="{{ 'assets/social-icons.svg#rss' | relative_url }}"></use>
+        </svg><span>RSS Feed abonnieren</span>
+      </a>
+    </p>
+    {% include social.html %}
+    <p>{{ site.description | escape }}</p>
+    <p>
+      &copy; {{ site.since }}–{{ site.time | date: '%Y' }} {{ site.author.display | escape }}
+    </p>
+  </div>
 </footer>

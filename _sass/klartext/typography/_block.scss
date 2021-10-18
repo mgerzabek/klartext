@@ -1,5 +1,9 @@
+.default-w {
+  max-width: 40rem;
+  margin: 0 auto;
+}
 article { 
-  p, h1, h2, h3, h4, dl, ol, ul, blockquote, .default-w {
+  p, h1, h2, h3, h4, dl, ol, ul, blockquote {
     max-width: 40rem;
     margin: 0 auto;
   }
@@ -75,8 +79,11 @@ article {
   }
 }
 @media (min-width: 1024px) {
+	.default-w {
+    padding: 0 1rem 1rem
+  }
   article { 
-    p, h1, h2, h3, h4, dl, ol, ul, blockquote, .default-w {
+    p, h1, h2, h3, h4, dl, ol, ul, blockquote {
       padding: 0 1rem 1rem
     }	
   }
