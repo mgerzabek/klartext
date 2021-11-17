@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 article { 
-  p, h1, h2, h3, h4, dl, ol, ul, blockquote, header {
+  p, h1, h2, h3, h4, dl, ol, ul, blockquote {
     max-width: 40rem;
     margin: 0 auto;
   }
@@ -83,7 +83,7 @@ article {
     padding: 0 1rem 1rem
   }
   article { 
-    p, h1, h2, h3, h4, dl, ol, ul, blockquote, header {
+    p, h1, h2, h3, h4, dl, ol, ul, blockquote {
       padding: 0 1rem 1rem
     }	
   }
