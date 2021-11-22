@@ -41,7 +41,10 @@ description: >
   Beschreibe hier deine neue Website. Du kannst diese Inhalte in _config.yml 
   bearbeiten. Dieser Text wird im Dokumentkopf deiner Website angezeigt – damit
   auch in den Google-Suchergebnisse und in der Seitebeschreibung in feed.xml.
-  
+
+# Cookie Benachrichtigung
+cookies: Diese Seite verwendet keine Cookies.
+
 since: 1968
   
 # Was immer für dich passt…    
@@ -58,7 +61,7 @@ klartext:
   # Shopify;
   # https://shopify.github.io/liquid/filters/date/ 
   #date_format: "%d. %B %y"
-  
+
   # Links zu social media accounts in der Fußzeile mit display: true
   # aktivieren und dann die entsprechenden Platformen mit dem Benutzernamen
   # versehen und auskommentieren
