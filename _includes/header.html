@@ -4,7 +4,7 @@
     {{ page.title }}
     <!-- Kicker -->
     {% if page.kicker %}
-      <span><img src="{{ site.data.ci.logos.icon.path }}" alt="{{ site.data.ci.logos.icon.alt }}">{{ page.kicker | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+      <span><img src="/assets/ci/logo-icon.svg" alt="CI Icon">{{ page.kicker | markdownify | remove: '<p>' | remove: '</p>' }}</span>
     {% endif %}
   </h1>
   
