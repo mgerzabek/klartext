@@ -9,8 +9,8 @@
 {% assign license_url = include.license_url | default: video.license.url | default: "" %}
 <div class="youtube default-w">
 <p class="video-header">
-  Quelle: {% if source_url != '' %}<a class="" href="{{ source_url }}" title="{{ source }}">{{ source }}</a>{% else %}{{ source }}{% endif %} &middot;
-  {% if license_url != '' %}<a class="" href="{{ license_url }}" title="{{ license }}">{{ license }}</a>{% else %}{{ license }}{% endif %}.
+  Quelle: {% if source_url != '' %}<a class="source" href="{{ source_url }}" title="{{ source }}">{{ source }}</a>{% else %}{{ source }}{% endif %} &middot;
+  {% if license_url != '' %}<a class="source" href="{{ license_url }}" title="{{ license }}">{{ license }}</a>{% else %}{{ license }}{% endif %}.
 </p>
 <div class="video-wrapper video-wrapper-{{ aspect_ratio }}"> 
   <iframe src="https://www.youtube.com/embed/{{ video.key }}?rel=0&showinfo=0&wmode=transparent&modestbranding=0" allowfullscreen="" frameborder="0" height="315" width="560"></iframe>

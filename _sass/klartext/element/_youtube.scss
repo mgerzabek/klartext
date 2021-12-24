@@ -7,7 +7,17 @@ div.youtube {
     padding: 0 0.25rem 0.25rem;
     font-size: 0.75rem;
     color: var(--figure-header-color);
-    text-align: right
+    text-align: right;
+    
+    & > a.source {
+      text-decoration: none;
+      box-shadow: initial;
+      border: none;
+      
+      &:hover {
+        text-decoration: none
+      }
+    }
   }
   h4.video-title {
     font-weight: 600;

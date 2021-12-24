@@ -81,6 +81,8 @@ Wer also seine Interessenten besser vorselektiert als sein Mitbewerb, verkürzt 
   
 Das sind Kunden – ein Leben lang.
 
+{% include youtube.html id="GJ9Z1WqzC0U" %}
+
 ## Die Firmenhomepage als Verkäufer
 
 Wenden wir uns obigem Dialog zu.

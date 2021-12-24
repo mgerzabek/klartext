@@ -1,9 +1,9 @@
 footer.site-info {
 	font-size: smaller;
 	margin-top: 2.5rem;
+	margin-bottom: 6.5rem;
 	border-top: 1px solid var(--footer-border-color);
-	padding-top: 1.5rem;
-	padding-bottom: 7.5rem;
+	padding: 0 1rem;
 
 	a {
 	
@@ -31,4 +31,10 @@ footer.site-info {
 	    }
 	  }  
 	}
-}	
+}
+@media (min-width: 1024px) {
+	footer.site-info {
+	  padding-top: 1.5rem;
+    padding-bottom: 7.5rem;
+	}
+}
