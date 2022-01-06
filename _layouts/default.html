@@ -1,4 +1,4 @@
-{% assign sidebar = site.data.navigation.sidebar | default: page.alpine | default: false %}
+{% assign sidebar = site.data.navigation.sidebar | default: layout.alpine | default: false %}
 <!DOCTYPE html>
 <html lang="{{ page.locale | default: site.locale | slice: 0,2  | default: 'de' }}">
   <head>
