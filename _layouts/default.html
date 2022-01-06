@@ -1,4 +1,5 @@
-{% assign sidebar = site.data.navigation.sidebar | default: layout.alpine | default: false %}
+{% assign alpine = site.data.navigation.sidebar | default: layout.alpine | default: false %}
+{% assign sidebar = site.data.navigation.sidebar | default: false %}
 <!DOCTYPE html>
 <html lang="{{ page.locale | default: site.locale | slice: 0,2  | default: 'de' }}">
   <head>
@@ -7,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% seo %}
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
-    {% if sidebar %}<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>{% endif %}
+    {% if alpine %}<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>{% endif %}
     {% feed_meta %}
     {% include custom-head.html %}
   </head>
