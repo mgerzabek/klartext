@@ -3,16 +3,16 @@
 	
 	li {
 	 display: inline-flex;
-	 
-		a[rel='me'] svg {
-			width: 1rem;
-			height: 1rem;
-		  fill: currentColor;
-		  color: var(--social-icon-color);
-		  
-		  &:hover {
-		    color: var(--social-icon-color-hover);
-		  }
-		}
+		
 	}
+	a[rel='me'] svg {
+    width: 1rem;
+    height: 1rem;
+    fill: currentColor;
+    color: var(--social-icon-color);
+    
+    &:hover {
+      color: var(--social-icon-color-hover);
+    }
+  }
 }
