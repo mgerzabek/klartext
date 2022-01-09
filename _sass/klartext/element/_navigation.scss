@@ -93,7 +93,8 @@ a.top__inactive {
   }
 }
 
-div.search { 
+div.search {
+	position: relative;
 	display: flex; 
 	flex: 1 1 0%;
 	padding-left: 1rem; 
