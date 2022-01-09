@@ -97,6 +97,7 @@ div.search {
 	position: relative;
 	display: flex; 
 	z-index: 12;
+	background-color: var(--nav-bg-color);
 	flex: 1 1 0%;
 	padding-left: 1rem; 
   padding-right: 1rem; 
@@ -174,7 +175,6 @@ input.search-field {
 div.app-menu { 
   display: flex; 
   align-items: center; 
-  margin-left: 1rem; 
   border-color: var(--nav-cell-border-color); 
   border-left-width: 1px; 
   padding-left: 0.25rem; 
