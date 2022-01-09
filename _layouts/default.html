@@ -8,6 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% seo %}
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+    {% if site.data.navigation.search == true %}
+    <script type="text/javascript" src="/assets/vendor/lunr.min.js"></script>
+    <script type="text/javascript" src="/assets/search.js"></script>
+    {% endif %}
     {% if alpine %}<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>{% endif %}
     {% feed_meta %}
     {% include custom-head.html %}
