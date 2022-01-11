@@ -33,10 +33,12 @@
   padding-left: .75rem
 }
 
-.search-result:hover, .search-result.active {
+.search-result:hover {
   background-color: #ebedf5
 }
-
+.search-result.active {
+  background-color: #f1f8dd
+}
 .search-result-title {
   display: block;
   padding-top: .5rem;
