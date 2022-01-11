@@ -17,6 +17,7 @@ cp ./klartext/_includes/navigation.html ./extended/_includes/navigation.html
 cp ./klartext/_includes/sidebar.html ./extended/_includes/sidebar.html
 cp ./klartext/_includes/skin.html ./extended/_includes/skin.html
 cp ./klartext/_includes/social.html ./extended/_includes/social.html
+cp ./klartext/_includes/svg-icons.html ./extended/_includes/svg-icons.html
 cp ./klartext/_includes/youtube.html ./extended/_includes/youtube.html
 cp ./klartext/_layouts/landing.html ./extended/_layouts/landing.html
 cp ./klartext/_layouts/page.html ./extended/_layouts/page.html

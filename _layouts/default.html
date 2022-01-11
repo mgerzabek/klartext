@@ -1,5 +1,6 @@
 {% assign alpine = site.data.navigation.sidebar | default: layout.alpine | default: false %}
 {% assign sidebar = site.data.navigation.sidebar | default: false %}
+{% assign search = site.data.navigation.search | default: false %}
 <!DOCTYPE html>
 <html lang="{{ page.locale | default: site.locale | slice: 0,2  | default: 'de' }}">
   <head>
@@ -8,8 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% seo %}
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
-    {% if site.data.navigation.search == true %}
-    <script type="text/javascript" src="/assets/vendor/lunr.min.js"></script>
+    {% if search %}
+    <script type="text/javascript" src="/assets/vendor/lunr.js"></script>
+    <script type="text/javascript" src="/assets/vendor/lunr.stemmer.support.js"></script>
+    <script type="text/javascript" src="/assets/vendor/lunr.de.js"></script>
+    <script type="text/javascript" src="/assets/vendor/lunr.multi.js"></script>
     <script type="text/javascript" src="/assets/search.js"></script>
     {% endif %}
     {% if alpine %}<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>{% endif %}
@@ -23,5 +27,6 @@
     {% if sidebar %}{% include sidebar.html %}{% endif %}
     {% if site.skin %}{% include skin.html %}{% endif%}
     {% include custom-pre-closing-body.html %}
+    {% if search %}{% include svg-icons.html %}{% endif %}
   </body>
 </html>
