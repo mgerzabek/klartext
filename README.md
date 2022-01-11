@@ -28,6 +28,10 @@ Eine ausführliche und durchsuchbare Dokumentation des Themes findest du auf uns
 
 ## Credits
 
+- tailwindlabs/heroicons
+- pmarsceill/just-the-docs
+- olivernn/lunr.js
+- MihaiValentin/lunr-languages
 …
 
 ## Lizenz

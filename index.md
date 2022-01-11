@@ -5,6 +5,7 @@ kicker: High-End IT-Services für Beratungsboutiquen
 description: Seit einem Jahrzehnt wird die Formel »Werde Reich mit einem Onlinebusiness« durch die unendlichen Weiten des Internets gejagt und dabei unhinterfragt WordPress als technologische Business-Plattform empfohlen. Das mit Erfolg.
 video: cgJue9LKtdc
 ---
+Wir befinden uns hier in einem interessanten Zeitalter <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/assets/vendor/heroicons.solid.svg#academic-cap"/></svg>
 
 <div class="infobox">
   
@@ -47,3 +48,4 @@ Man mag von Bezos und seinen Geschäftspraktiken halten, was man will. Unternehm
 Wenn du <b>lieber gemeinsam statt einsam</b> an einem internen Projekt arbeiten willst, ist dieses Angebot wie geschaffen für dich.
 
 [^2]: Amazon-Aktie auf Rekordhoch – Bezos macht in Corona-Krise Milliarden. Quelle: [derStandard](https://www.derstandard.at/story/2000116870079/amazon-aktie-auf-rekordhoch-bezos-macht-in-corona-krise-milliarden "weiter zum Standard Artikel") (letzer Zugriff: 21. April 2020, 11:00)
+

@@ -37,7 +37,11 @@
         {% for item in site.data.navigation.menu %}
           {% assign startsWith = page.url | split: item.href %}
           <a href="{{ item.href }}" class="group nav {% unless startsWith[0] == page.url %}nav__active{% else %}nav__inactive{% endunless %}">
-            {% if item.icon %}{{ item.icon }}{% endif %}
+            {% if item.icon %}
+            <svg class="icon mr-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <use xlink:href="/assets/vendor/{{ item.icon }}"/>
+            </svg>
+            {% endif %}
             {{ item.text }}
           </a>
           {% if item.children %}

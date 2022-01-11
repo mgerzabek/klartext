@@ -45,6 +45,10 @@
 .bg-gray{
   background-color: var(--bg-gray)
 }
+/* Margins ------------------------------------------------------------------ */
+.mr-1 {
+	margin-right: .25rem
+}
 
 /* Orientierung Bilder im Fließtext ----------------------------------------- */
 .left {
@@ -63,4 +67,9 @@
 	.w-2\/3 {
 	  padding-left: 11px;
 	}
+}
+/* Icons ------------------------------------------------------------------- */
+.icon {
+	width: 1rem;
+	height: 1rem;
 }
