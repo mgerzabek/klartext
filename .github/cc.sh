@@ -26,6 +26,8 @@ cp ./klartext/_layouts/video.html ./extended/_layouts/video.html
 cp ./klartext/assets/ci/logo-full.svg ./extended/assets/ci/logo-full.svg
 cp ./klartext/assets/ci/logo-icon.svg ./extended/assets/ci/logo-icon.svg
 cp ./klartext/assets/ci/logo-small.svg ./extended/assets/ci/logo-small.svg
+cp ./klartext/assets/vendor/heroicons.outline.svg ./extended/assets/vendor/heroicons.outline.svg
+cp ./klartext/assets/vendor/heroicons.solid.svg ./extended/assets/vendor/heroicons.solid.svg
 cp ./_site/assets/style.css ./extended/assets/klartext.css
 cp ./_site/assets/style.css.map ./extended/assets/klartext.css.map
 cd klartext
