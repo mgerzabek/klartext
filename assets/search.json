@@ -4,7 +4,7 @@
 {% for page in site.html_pages %}
   {
     "title": {{ page.title | jsonify }},
-    "description": "{{ page.description | default: "" | jsonify }}",
+    "description": {{ page.description | default: "" | jsonify }},
     "content": {{ page.content | strip_html | normalize_whitespace | jsonify }},
     "url": "{{ page.url | absolute_url }}",
     "relUrl": "{{ page.url }}"
