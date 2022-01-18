@@ -4,6 +4,7 @@ cp ./klartext/_includes/button/cta.html ./extended/_includes/button/cta.html
 cp ./klartext/_includes/button/cta.w.alt.text.html ./extended/_includes/button/cta.w.alt.text.html
 cp ./klartext/_includes/icons/external-link.html ./extended/_includes/icons/external-link.html
 cp ./klartext/_includes/icons/link.html ./extended/_includes/icons/link.html
+cp ./klartext/_includes/meta/edit.html ./extended/_includes/meta/edit
 cp ./klartext/_includes/testimonial/basic.html ./extended/_includes/testimonial/basic.html
 cp ./klartext/_includes/audio.html ./extended/_includes/audio.html
 cp ./klartext/_includes/credit.html ./extended/_includes/credit.html
