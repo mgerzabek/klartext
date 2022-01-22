@@ -32,14 +32,14 @@ figure.highlight {
 }
 
 @media (min-width: 1024px) {
-  div.highlighter-rouge.nolinenos > div.highlight {
+  div.highlight {
     max-width: 40rem;
     margin: 0 auto;
   }
 } 
 
 @media (min-width: 1024px) {
-	div.highlighter-rouge.linenos > div.highlight {
+	div.highlight {
     max-width: 40rem;
     margin: 0 auto;
 	}
