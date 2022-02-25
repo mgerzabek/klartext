@@ -1,7 +1,7 @@
 p.cta {
 	@include space-y;
   
-	a.button {
+	a.button, button {
 	  display: inline-flex;
 	  align-items: center;
 	  padding-top: 0.5rem;
