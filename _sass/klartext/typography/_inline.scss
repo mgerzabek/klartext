@@ -18,6 +18,24 @@ article {
 	    height: 1rem;
 	    display: inline-block;
 	  }
+	  
+	  &.citation {
+	    box-shadow: initial; 
+	    border: none;
+	     
+	    &:hover {
+	      text-decoration: underline
+	    }
+	  }
+	  &.keyword {
+      box-shadow: initial; 
+      border: none;
+      font-variant: small-caps; 
+       
+      &:hover {
+        text-decoration: underline
+      }
+    }
 	}
 	a[role=button] {
 	  box-shadow: initial;
