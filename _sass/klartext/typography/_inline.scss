@@ -9,7 +9,7 @@ article {
 	  text-decoration: none;
 	  transition: background-color 250ms ease, color 250ms ease, box-shadow 250ms ease, border-color 250ms ease;
 	
-	  &:hover {
+	  &:hover, &.citation:hover, &.keyword:hover {
 	    color: var(--font-color);
 	    box-shadow: initial;
 	  }
