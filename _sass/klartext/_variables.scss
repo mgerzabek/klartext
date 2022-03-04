@@ -89,7 +89,7 @@ $scedule-break-color                  :   #000 !default;
 /* form/form.scss ----------------------------------------------------------- */
 $form-border-color                    :   #e5e7eb !default;
 $form-legend-color                    :   #71767C !default;
-$form-label-color                     :   #ACACAC !default;
+$form-label-color                     :   $gray-500 !default;
 $form-field-border-color              :   #ECECEC !default;
 $form-field-focus-color               :   #0075d5 !default;
 $form-field-bg-color                  :   #ffffff !default;
