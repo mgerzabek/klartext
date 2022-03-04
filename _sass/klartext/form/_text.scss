@@ -1,5 +1,5 @@
 
-input[type="text"], input[type="email"] {
+input[type="text"], input[type="email"], input[type="password"] {
 	-webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -17,7 +17,7 @@ input[type="text"], input[type="email"] {
   letter-spacing: 0.012em;
 }
 
-input[type="text"] + label, input[type="email"] + label {
+input[type="text"] + label, input[type="email"] + label, input[type="password"] + label {
   display: block;
   position: absolute;
   bottom: 0;
@@ -32,14 +32,14 @@ input[type="text"] + label, input[type="email"] + label {
   animation-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
  }
 
-input[type="text"]:focus + label, input[type="email"]:focus + label {
+input[type="text"]:focus + label, input[type="email"]:focus + label, input[type="password"]:focus + label {
   animation-name: labelOut;
   animation-duration: .5s;
   animation-direction: normal;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
- input[type="text"]:valid + label, input[type="email"]:valid + label {
+ input[type="text"]:valid + label, input[type="email"]:valid + label, input[type="password"]:valid + label {
   animation-name: fieldValid;
   animation-duration: .5s;
   animation-direction: normal;
