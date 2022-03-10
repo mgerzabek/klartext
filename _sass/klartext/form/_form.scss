@@ -26,6 +26,10 @@ form {
   & *:focus {
     outline: 0;
   }
+  
+  &.none {
+    border: initial;
+  }
 }
 @keyframes fadeIn {
   from {
