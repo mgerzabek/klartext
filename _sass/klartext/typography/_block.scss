@@ -78,6 +78,11 @@ article {
     list-style: circle;
     list-style-position: inside
   }
+  details > p {
+    font-family: $sans-serif;
+    font-size: smaller;
+    padding: 0 7.5rem .75rem 0;
+  }
 }
 @media (min-width: 1024px) {
 	.default-w {

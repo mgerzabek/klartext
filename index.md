@@ -47,5 +47,6 @@ Man mag von Bezos und seinen Geschäftspraktiken halten, was man will. Unternehm
 
 Wenn du <b>lieber gemeinsam statt einsam</b> an einem internen Projekt arbeiten willst, ist dieses Angebot wie geschaffen für dich.
 
+
 [^2]: Amazon-Aktie auf Rekordhoch – Bezos macht in Corona-Krise Milliarden. Quelle: [derStandard](https://www.derstandard.at/story/2000116870079/amazon-aktie-auf-rekordhoch-bezos-macht-in-corona-krise-milliarden "weiter zum Standard Artikel") (letzer Zugriff: 21. April 2020, 11:00)
 
