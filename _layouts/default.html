@@ -23,7 +23,8 @@
   <body{% if sidebar %} x-data="{ sidebarOpen: false }" x-on:keydown.window.escape="sidebarOpen = false"{% endif %}>
 
     {{ content }}
-      
+    
+    {% include footer.html %}  
     {% if sidebar %}{% include sidebar.html %}{% endif %}
     {% if site.skin %}{% include skin.html %}{% endif%}
     {% include custom-pre-closing-body.html %}
