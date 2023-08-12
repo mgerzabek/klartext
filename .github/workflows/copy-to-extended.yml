@@ -1,4 +1,4 @@
-name: Copy mgerzabek/klartext theme folders to pragmaticag/extended
+name: Copy mgerzabek/klartext theme folders to mgerzabek/extended
 
 on:
   push:
@@ -13,15 +13,14 @@ jobs:
     steps:
       
       - name: Checkout mgerzabek/klartext
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           path: klartext
           
-      - name: Checkout pragmatiqu/extended
-        uses: actions/checkout@v2
+      - name: Checkout mgerzabek/extended
+        uses: actions/checkout@v3
         with:
-          repository: pragmatiqu/extended
-          token: ${{ secrets.KLARTEXT_PAT }}
+          repository: mgerzabek/extended
           path: extended
           
       - name: Setup ruby
