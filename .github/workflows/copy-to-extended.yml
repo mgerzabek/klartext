@@ -17,10 +17,10 @@ jobs:
         with:
           path: klartext
           
-      - name: Checkout pragmaticag/extended
+      - name: Checkout pragmatiqu/extended
         uses: actions/checkout@v2
         with:
-          repository: pragmaticag/extended
+          repository: pragmatiqu/extended
           token: ${{ secrets.KLARTEXT_PAT }}
           path: extended
           
