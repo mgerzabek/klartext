@@ -22,6 +22,7 @@ jobs:
         with:
           repository: mgerzabek/extended
           path: extended
+          ref: main
           
       - name: Setup ruby
         uses: ruby/setup-ruby@v1
